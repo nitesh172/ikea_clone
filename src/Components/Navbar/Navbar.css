@@ -97,16 +97,27 @@
     background-color: rgb(245, 245, 245);
 }
 
+
+#truckBox:active  {
+    background-color: rgb(222,222,223);
+}
+
+
+
 #userBox{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
+
 #userBox:hover{
     background-color: rgb(245, 245, 245);
 }
 
+#userBox:active {
+    background-color: rgb(222,222,223);
+}
 
 #shoppingBox{
     width: 40px;
@@ -114,9 +125,16 @@
     border-radius: 50%;
 }
 
+
 #shoppingBox:hover{
     background-color: rgb(245, 245, 245);
 }
+
+
+#shoppingBox:active {
+    background-color: rgb(222,222,223);
+}
+
 
 
 #dis{
@@ -145,6 +163,8 @@
     border: .2px solid ;
     margin-left: 1.5%;
 }
+
+
 
 
 

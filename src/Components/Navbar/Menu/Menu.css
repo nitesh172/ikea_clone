@@ -22,9 +22,91 @@
     cursor: pointer;
 }
 
+#menuIconBox:active{
+    background-color: rgb(222,222,223);
+}
+
 #menuIcon{
     font-size: 1.6vw;
     position: fixed;
 
 }
 
+
+.leftBox{
+    position: relative;
+    top: -75px;
+    left: -600px;
+    width: 482px;
+    height: 728px;
+    background-color: white;
+    /* display: none; */
+    
+    /* animation:  .5s linear slideOut ; */
+}
+
+
+@keyframes slideOut{
+    0%{
+        
+        transform: translateX(482px);
+        
+    }
+    100%{
+        transform: translateX(-500px);
+        
+    }
+}
+
+
+
+
+.show{
+    position: relative;
+    top: -75px;
+    left: -55px;
+    width: 482px;
+    height: 728px;
+    background-color: white;
+    animation:  .2s linear slideIn ;
+}
+
+@keyframes slideIn{
+    0%{
+        transform: translateX(-482px);
+        
+    }
+    100%{
+        transform: translateX(0px);
+            }
+        }
+        
+        
+.heading{
+    box-sizing: border-box;
+    padding: 5.5% 0 0 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 40px;
+}
+
+.closeIcon{
+    box-sizing: border-box;
+    margin: 5% 0 0 45%;
+    font-size: 1.45vw;
+}
+
+.boxImg{
+    width: 28%;
+    height: 90%;
+    margin: 0 0 0 1%;
+}
+
+
+    
+
+
+
+div{
+    /* border: 1px solid black; */
+}

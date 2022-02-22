@@ -1,0 +1,13 @@
+#firstCat{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 2%;
+}
+
+#box{
+    height: 100%;
+}
+
+#imgDiv{
+    
+}
