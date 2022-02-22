@@ -71,9 +71,18 @@ export const Navbar = () => {
             </div>
         </div>
 
-        <div id='dis'>
+        <div id='outName'>
+            <div id='names'>
+                <div>Products</div>
+                <div>Rooms</div>
+                <div>New at IKEA</div>
+                <div>All offers</div>
+
+            </div>
 
         </div>
+
+
 
         
         

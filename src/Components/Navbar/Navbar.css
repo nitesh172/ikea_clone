@@ -123,6 +123,31 @@
     height: 2000px;
 }
 
+#outName{
+    width: 88%;
+    border-bottom: 1px solid rgb(222,222,223);
+    margin-left: 8.8%;
+}
+
+#names{
+    width: 30%;
+    font-size: .95vw;
+    font-weight: 700;
+    margin: 1.5% 0 0 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    box-sizing: border-box;
+    padding-bottom: 1%;
+}
+
+.line{
+    width: 100%;
+    border: .2px solid ;
+    margin-left: 1.5%;
+}
+
+
+
 div{
     /* border: .1px solid black; */
 }
