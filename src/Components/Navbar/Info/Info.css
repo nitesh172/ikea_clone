@@ -1,0 +1,42 @@
+
+*{
+    font-family:  "Noto IKEA", "Noto Sans", Roboto, "Open Sans", system-ui, sans-serif;
+}
+#blackB{
+    width: 100%;
+    background-color: #111 ;
+    height: 40px;
+}
+
+#textBox{
+    width: 40%;
+    margin: auto;
+    padding-top: .7%;
+    display: grid;
+    grid-template-columns: 5% 95% ;
+
+    /* border: 1px solid wheat; */
+}
+
+#textBox:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    
+}
+.bText{
+    color: #FFFFFF;
+    font-size: .82vw;
+    font-weight: 400;
+    overflow-wrap: normal;
+}
+
+.color{
+    color: white;
+    font-size: 1.15vw;
+}
+
+.nav{
+    
+}
+

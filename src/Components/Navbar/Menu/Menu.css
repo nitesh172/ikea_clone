@@ -1,0 +1,30 @@
+
+
+/* #circle{
+    /* margin: 2% 0 0 3.5%; */
+    /* width: 20px;
+    height: 20px;
+} */ 
+
+#menuIconBox{
+    position: fixed;
+    top: 9.2%;
+    left: 3%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: .5% 0 0 0.45% ;
+}
+
+#menuIconBox:hover{
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+#menuIcon{
+    font-size: 1.6vw;
+    position: fixed;
+
+}
+

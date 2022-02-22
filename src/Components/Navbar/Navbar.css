@@ -1,0 +1,128 @@
+#navBox{
+    display: grid;
+    margin: 1.5% 0 0 0 ;
+    grid-template-columns: 8% 92%;
+    height: 50px;
+}
+
+
+#inBox{
+    display: grid;
+    grid-template-columns: 9.5% 76% 14.5%;
+}
+
+
+#imgBox{
+    margin: 4.5% 0 0 8%;
+    box-sizing: border-box;
+    width: 73%;
+    height: 73%;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+#grayBox{
+    height: 108%;
+    margin: -.2% 0 0 0;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    
+}
+
+#insideGray{
+    height: 100%;
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+}
+
+#grayBox:hover, #inpBox:hover{
+    background-color: rgb(222,222,223);
+}
+
+#grayBox:hover #inpBox{
+    
+    background-color: rgb(222,222,223);
+}
+
+.searchIcon{
+    font-size: 1.3vw;
+    margin: 35% 0 0 20%;
+}
+
+#inpBox{
+    outline: none;
+    border: transparent;
+    width: 100%;
+    background-color: #f5f5f5;;
+    height: 100%;
+    font-size: 1.1vw;
+}
+
+.camera{
+    margin: 32% 0 0 28%;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+#icons{
+    box-sizing: border-box;
+    padding-top: 1.5%;
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.insIcons{
+    font-size: 1.5vw;
+    margin-top: 22%;
+    margin-left: 20%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#truckBox{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#truckBox:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+#userBox{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#userBox:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+
+#shoppingBox{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#shoppingBox:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+
+#dis{
+    height: 2000px;
+}
+
+div{
+    /* border: .1px solid black; */
+}
