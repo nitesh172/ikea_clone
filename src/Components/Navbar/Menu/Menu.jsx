@@ -21,8 +21,6 @@ export const Menu = () => {
   const focusProduct = useRef(null)
   const focusFurniture = useRef(null)
   const focusKitchen  = useRef(null)
-  const focusSB = useRef(null);
-  const focusTB = useRef(null)
 
 
   return (
@@ -39,6 +37,7 @@ export const Menu = () => {
               <div>
                 <div className="circle">
                   <IoCloseSharp onClick={()=>{
+                    focusFurniture.current.classList.add("non")
                     dispatch(hideFunction())
                   }} className="closeIcon"></IoCloseSharp>
                 </div>
