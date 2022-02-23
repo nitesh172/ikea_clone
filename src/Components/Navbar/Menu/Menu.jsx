@@ -1,7 +1,7 @@
 import "./Menu.css"
 
 import {BiMenu} from "react-icons/bi"
-import {IoCloseSharp} from "react-icons/io5"
+import {IoCloseSharp, IoArrowBackOutline} from "react-icons/io5"
 
 import {useState, useRef} from 'react'
 import {BsGlobe2} from "react-icons/bs"
@@ -14,22 +14,23 @@ export const Menu = () => {
 
 
   const dispatch = useDispatch()
+  let i = 0;
+
 
   const focusSecond = useRef(null)
   const focusProduct = useRef(null)
-
+  const focusFurniture = useRef(null)
 
 
   return (
-
+ 
     <div id="menuIconBox">
 
        <BiMenu id="menuIcon" onClick={()=> {
          dispatch(showFunction())
         }}></BiMenu>
 
-            
-       <div className={active ? "show" : "leftBox " } id="h"   >
+      <div className={active ? "show" : "leftBox " } id="h"   >
 
           <div className="heading">
               <div>
@@ -46,7 +47,7 @@ export const Menu = () => {
               </div>
           </div>
           
-        <div id="secondBox"  ref={focusSecond} >
+        <div className="secondBox"  ref={focusSecond} >
 
         
           <div id="text">
@@ -54,8 +55,8 @@ export const Menu = () => {
                     // console.log(focusSecond.current);
                     // console.log(focusProduct.current);
 
-                    focusSecond.current.classList.add("productBox")
-
+                    focusSecond.current.classList.add("hideBox")
+                    focusProduct.current.classList.add("showBox")
                   }}>
                       Products                    
                   </div>
@@ -126,11 +127,70 @@ export const Menu = () => {
 
         {/* ////products Box */}
 
-        <div id="productBox" ref={focusProduct}>
+        <div className="productBox" ref={focusProduct}>
 
+              <div id="prodHeading">
+                  
+                  <div>
+                    <div id="arrowBox" >
+                       <IoArrowBackOutline id="backArrIcon"  onClick={()=>{
+                        focusSecond.current.classList.remove("hideBox")
+                        focusProduct.current.classList.remove("showBox")
+                          //make them work
+                      }}></IoArrowBackOutline>
+
+                    </div>
+                  </div>
+
+                  <div>
+                      Products
+                  </div>
+
+              </div>
+
+              <div id="prodText">
+                    <div>
+                      <div>New lower price</div>
+                      <div>Textile under Rs.999</div>
+                      <div>Handpicked combinations for a new fresh look</div>
+                      <div>Sustainable living</div>
+                      <div>Product guides</div>
+                      
+                    </div>
+
+                    <div>
+                        <div id="Furniture" onClick={()=>{
+                          if(i%2 == 0){
+                            focusFurniture.current.classList.remove("non")
+                            i++;
+                          }else{
+                            focusFurniture.current.classList.add("non")
+                            i++
+                          }
+                        }}>Furniture</div>
+                        <div>Kitchen & appliances</div>
+                        <div>Beds & mattresses</div>
+                        <div>Storage & organisation</div>
+                        <div>Working from home</div>
+                        <div>Textiles</div>
+                        <div>Decoration</div>
+                        <div>Bathroom products</div>
+                        <div>Outdoor products</div>
+                        <div>Lighthing</div>
+                        <div>Carpet, mats & flooring</div>
+                        <div>Baby & children</div>
+                        <div><u>More</u></div>
+                    </div>
+              </div>
+                 
         </div>
 
-       </div>
+      </div>
+
+      <div className="furnitureBox non" ref={focusFurniture}>
+                
+            
+      </div>
     </div>
   
 
