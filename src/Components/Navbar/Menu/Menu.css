@@ -1,0 +1,239 @@
+
+
+/* #circle{
+    /* margin: 2% 0 0 3.5%; */
+    /* width: 20px;
+    height: 20px;
+} */ 
+
+#menuIconBox{
+    position: fixed;
+    top: 9.2%;
+    left: 3%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: .5% 0 0 0.45% ;
+}
+
+#menuIconBox:hover{
+    background-color: rgb(245, 245, 245);
+
+}
+
+#menuIcon:hover{
+    cursor: pointer;
+}
+
+#menuIconBox:active{
+    background-color: rgb(222,222,223);
+}
+
+#menuIcon{
+    font-size: 1.6vw;
+    position: fixed;
+
+}
+
+
+.leftBox{
+    position: relative;
+    top: -75px;
+    left: -600px;
+    width: 482px;
+    height: 728px;
+    background-color: white;
+    transform: translateX(-500px);
+    transition: all linear .4s;
+}
+
+
+
+
+
+.show{
+    position: relative;
+    top: -75px;
+    left: -55px;
+    width: 482px;
+    height: 728px;
+    background-color: white;
+    animation:  .2s linear slideIn ;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes slideIn{
+    0%{
+        transform: translateX(-482px);
+        
+    }
+    100%{
+        transform: translateX(0px);
+            }
+        }
+        
+        
+.heading{
+    box-sizing: border-box;
+    padding: 5.5% 0 0 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 40px;
+}
+
+.closeIcon{
+    box-sizing: border-box;
+    font-size: 1.45vw;
+    box-sizing: border-box;
+    margin: 20% 0 0 20%;
+}
+
+.boxImg{
+    width: 28%;
+    height: 90%;
+    margin: 0 0 0 1%;
+}
+
+.circle{
+    /* border: 1px solid red; */
+    width: 40px;
+    margin: 0% 0 0 45%;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.circle:hover{
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+
+.circle:active{
+    background-color: rgb(222,222,223);
+}
+
+#secondBox{
+    overflow: scroll;
+    height: 620px;
+    margin: 12% 0 0 3.2%  ;
+}
+
+#text{
+    margin: 5% 15% 0 30.5% ;
+
+}
+
+#text> div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#firstC{
+    font-size: 2.4vw;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+#secondC{
+    
+    font-size: 2.4vw;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+
+#thirdC{
+    
+    font-size: 2.4vw;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+#fourthC{
+    
+    font-size: 2.4vw;
+    font-weight: 700;
+}
+
+#textS{
+    font-weight: 700;
+    margin: 6% 20% 0 30.5% ;
+    font-size: .95vw;
+}
+
+#textS> div{
+    margin-bottom: 6%;
+}
+
+#textS> div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#textT{
+    
+    margin: 10% 20% 0 31% ;
+    font-size: .95vw;
+    font-weight: 500;
+    /* opacity: .95; */
+    color: rgb(17,17,17);
+}
+
+#textT > div{
+    margin-bottom: 7%;
+}
+
+#textT > div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#country{
+    margin: 17% auto 5% 30%;
+    width: 38%;
+    height: 45px;
+    border: 1px solid rgb(223,223,223);
+    border-radius: 38px;
+    display: flex;
+    gap: 5%;
+    padding: 1.5% 0 0 3%;
+    box-sizing: border-box;
+    color: rgb(72,73,73);
+}
+
+#country>div:nth-child(1){
+    margin: 2.8% 0 0 1% ;
+    font-size: 1.3vw;
+}
+
+
+#country>div:nth-child(2){
+    margin: 4.5% 0 0 3% ;
+    font-size: .8vw;
+    font-weight: 700;
+}
+
+#country:hover{
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+}
+
+
+#productBox{
+    
+    overflow: scroll;
+    height: 620px;
+    margin: 12% 0 0 3.2%  ;
+    display: none;
+}
+
+div{
+    /* border: 1px solid black; */
+}
