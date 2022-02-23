@@ -1,0 +1,59 @@
+
+.img_icon{
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+}
+
+.title_txt{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 1.5;
+    font-size: 0.98rem;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.title_txt:hover {
+    text-decoration: underline;
+}
+
+.desc_txt{
+     margin-left: 4%;
+    font-size: .875rem;
+    line-height: 1.42857;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #484848;
+
+}
+
+.rs{
+   
+    margin-left: 4%;
+    line-height: .9;
+    font-size: .7875rem;
+    margin-right: 0.0625rem;
+    unicode-bidi: bidi-override;
+}
+
+.price_txt{
+    margin-top: 2%;
+    
+    line-height: 1.1875;
+    font-size: 1.28rem;
+    vertical-align: inherit;
+    font-weight: 700;
+    color: #000;
+    white-space: pre;
+}
+
+.rating_txt{
+    margin-left: 4%;
+    display: flex;
+}
+
