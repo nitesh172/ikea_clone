@@ -20,6 +20,9 @@ export const Menu = () => {
   const focusSecond = useRef(null)
   const focusProduct = useRef(null)
   const focusFurniture = useRef(null)
+  const focusKitchen  = useRef(null)
+  const focusSB = useRef(null);
+  const focusTB = useRef(null)
 
 
   return (
@@ -136,6 +139,7 @@ export const Menu = () => {
                        <IoArrowBackOutline id="backArrIcon"  onClick={()=>{
                         focusSecond.current.classList.remove("hideBox")
                         focusProduct.current.classList.remove("showBox")
+                        focusFurniture.current.classList.add("non")
                           //make them work
                       }}></IoArrowBackOutline>
 
@@ -160,6 +164,7 @@ export const Menu = () => {
 
                     <div>
                         <div id="Furniture" onClick={()=>{
+                          
                           if(i%2 == 0){
                             focusFurniture.current.classList.remove("non")
                             i++;
@@ -168,8 +173,18 @@ export const Menu = () => {
                             i++
                           }
                         }}>Furniture</div>
-                        <div>Kitchen & appliances</div>
-                        <div>Beds & mattresses</div>
+                        <div onClick={()=>{
+                            
+                            if(i%2 == 0){
+                            focusKitchen.current.classList.remove("non")
+                            i++;
+                          }else{
+                            focusKitchen.current.classList.add("non")
+                            i++
+                          }
+                        }}>Kitchen & appliances</div>
+                        <div onClick={()=>{
+                        }}>Beds & mattresses</div>
                         <div>Storage & organisation</div>
                         <div>Working from home</div>
                         <div>Textiles</div>
@@ -187,10 +202,11 @@ export const Menu = () => {
 
       </div>
 
-      <div className="furnitureBox non" ref={focusFurniture}>
-                
-            
+      <div className="ProdBox non" ref={focusFurniture}>
+              sidF
+
       </div>
+
     </div>
   
 
