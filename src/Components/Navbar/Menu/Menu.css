@@ -226,6 +226,14 @@
 }
 
 
+#productBox{
+    
+    overflow: scroll;
+    height: 620px;
+    margin: 12% 0 0 3.2%  ;
+    display: none;
+}
+
 div{
     /* border: 1px solid black; */
 }

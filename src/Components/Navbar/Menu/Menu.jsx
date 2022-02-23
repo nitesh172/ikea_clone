@@ -12,11 +12,11 @@ export const Menu = () => {
 
   const {active} = useSelector(store=>store.shop)
 
-  const focusPt = useRef(null)
 
   const dispatch = useDispatch()
 
-  
+  const focusSecond = useRef(null)
+  const focusProduct = useRef(null)
 
 
 
@@ -29,7 +29,7 @@ export const Menu = () => {
         }}></BiMenu>
 
             
-       <div className={active ? "show" : "leftBox " } id="h" ref={focusPt}  >
+       <div className={active ? "show" : "leftBox " } id="h"   >
 
           <div className="heading">
               <div>
@@ -46,11 +46,15 @@ export const Menu = () => {
               </div>
           </div>
           
-        <div id="secondBox">
+        <div id="secondBox"  ref={focusSecond} >
 
         
           <div id="text">
-                  <div id="firstC" >
+                  <div id="firstC" onClick={()=>{
+                    // console.log(focusSecond.current);
+                    // console.log(focusProduct.current);
+
+                  }}>
                       Products                    
                   </div>
 
@@ -115,6 +119,13 @@ export const Menu = () => {
             </div>
           </div>
 
+        </div>
+
+
+        {/* ////products Box */}
+
+        <div id="productBox" ref={focusProduct}>
+                  
         </div>
 
        </div>
