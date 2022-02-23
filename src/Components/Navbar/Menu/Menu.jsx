@@ -54,6 +54,8 @@ export const Menu = () => {
                     // console.log(focusSecond.current);
                     // console.log(focusProduct.current);
 
+                    focusSecond.current.classList.add("productBox")
+
                   }}>
                       Products                    
                   </div>
@@ -125,7 +127,7 @@ export const Menu = () => {
         {/* ////products Box */}
 
         <div id="productBox" ref={focusProduct}>
-                  
+
         </div>
 
        </div>
