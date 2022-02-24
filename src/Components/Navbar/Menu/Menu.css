@@ -10,8 +10,8 @@
     position: fixed;
     top: 9.2%;
     left: 3%;
-    width: 40px;
-    height: 40px;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 50%;
     box-sizing: border-box;
     padding: .5% 0 0 0.45% ;
@@ -63,7 +63,7 @@
     overflow: scroll;
 }
 
-::-webkit-scrollbar {
+.show::-webkit-scrollbar {
   display: none;
 }
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import '../CSS/Footer.css';
-
-
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 
 export const Footer = () => {
@@ -89,19 +91,19 @@ export const Footer = () => {
             <div className="footer__social">
                 <div className="footer__links">
                     <div className="footer__socialIcons">
-                        
+                        <FacebookRoundedIcon fontSize="large" className='social'/>
                     </div>
 
                     <div className="footer__socialIcons">
-                        
+                        <InstagramIcon fontSize="large" className='social'/>
                     </div>
 
                     <div className="footer__socialIcons">
-                       
+                         <TwitterIcon fontSize="large" className='social'/>
                     </div>
                    
                     <div className="footer__socialIcons">
-                      
+                         <YouTubeIcon fontSize="large" className='social'/>
                     </div>
                 </div>
 

@@ -100,11 +100,18 @@
   border: 1px solid #B2BABB;
   /* padding-top: 10px; */
     text-align:center;
+    justify-content: center;
     border-radius: 50%;
     font-size: 28px;
     /* padding: 5px; */
     margin-left: 20px;
 }
+
+
+.social{
+    margin-top:5%;
+}
+
 
 .footer__icon {
     color: #1C2833;
