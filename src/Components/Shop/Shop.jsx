@@ -261,13 +261,132 @@ export const Shop = () => {
             </div>
 
         </div>
-{/* 
 
-        <div id='threeBox'>
+        <div id='shopNowB'>
+            See all
+        </div>
 
 
-        </div> */}
+        <div id='threeBox'> 
 
+            <div>
+                <div className='TimgBox'>
+                    <img src="https://i.postimg.cc/7ZLSMgT7/c412335f348f1cabb9f8cd8be40b408e.jpg" className='img' alt="" />
+                </div>
+
+                <div className='tBoxHead'> <u>New lower price</u> </div>
+            </div>
+
+            <div>
+                 <div className='TimgBox'>
+                    <img src="https://i.postimg.cc/nc33JV44/7cf171cfa52c14383a12ab53ea08e924.jpg" className='img' alt="" />
+                </div>
+
+                <div className='tBoxHead'> <u>Explore top sellers</u> </div>
+            </div>
+
+            <div>
+                 <div className='TimgBox'>
+                    <img src="https://i.postimg.cc/jqXXHqkp/3a1227ede4b16e693599fdda790d5a3a.jpg" className='img' alt="" />
+                </div>
+
+                <div className='tBoxHead'> <u>Book a fun day at IKEA Restaurant</u> </div>
+            </div>
+
+
+        </div>
+
+        <div id='susHomeBox'>
+
+            <div>Shop products for a more sustainable home</div>
+
+            <div id='susProdBox'>
+                
+                <div id='firstBoxG'>
+                    
+                    <div id='greenBoxT'>Explore our guides to sustainable living</div>
+
+                    <div id='circleGreen'>
+                        <IoArrowForwardSharp id='GBIcon'></IoArrowForwardSharp>
+                    </div>
+                </div>
+
+                <div>
+                    <div id='susBoxImg'>
+                        <img src="https://i.postimg.cc/gjk94zFg/hand-adjusts-the-water-flow-of-a-glypen-kitchen-tap-in-stain-a84ab755c113500b4318c6e4d0dc9924.jpg" className='img' alt="" />
+
+                        <div id='susBoxG'>
+                            Water saving
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div id='susBoxImg'>
+                        <img src="https://i.postimg.cc/3wVVmXnJ/a-hand-pressing-the-switch-of-a-white-table-lamp-standing-on-d8a6f025fb2647b42caea256f8058feb.jpg" className='img' alt="" />
+
+                        <div id='susBoxG'>
+                            Energy saving
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div id='susBoxImg'>
+                        <img src="https://i.postimg.cc/yYGmVLdd/a-woman-with-brown-hair-and-white-shirt-sleeping-under-a-whi-6f8f55594698055439b97d1138819aac.jpg" className='img' alt="" />
+
+                        <div id='susBoxG'>
+                            Healthier home
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div id='susBoxImg'>
+                        <img src="https://i.postimg.cc/rwWrqc3n/three-white-sortera-bins-in-a-white-tiled-room-where-one-is-0c696d80fa4e20c5d518bf63765bd18c.jpg" className='img' alt="" />
+
+                        <div id='susBoxG'>
+                            Reducing waste
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div id='susBoxImg'>
+                        <img src="https://i.postimg.cc/K8X1qwjn/ivar-chair-painted-light-green-standing-on-old-news-papers-i-f83b1db2f71591d77418a577c9c4be15.jpg" className='img' alt="" />
+
+                        <div id='susBoxG'>
+                            Sustainable furniture
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div id='susBoxImg'>
+                        <img src="https://i.postimg.cc/tTm3Yk52/a-white-blanket-and-three-white-bowls-on-a-gamlehult-footsto-4e4d49761e05301b963aa83daa0595fc.jpg" className='img' alt="" />
+
+                        <div id='susBoxG'>
+                            Sustainable materials
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div id='susBoxImg'>
+                        <img src="https://i.postimg.cc/wxmFbtQZ/a-hand-seasoning-huvudroll-plant-balls-in-a-ikea-365-frying-7db662f2975f80a04340c49e7c068cfb.jpg" className='img' alt="" />
+
+                        <div id='susBoxG'>
+                            Sustainable food
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
 
         <div id="empty">
