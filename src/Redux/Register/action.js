@@ -1,6 +1,6 @@
-import { ADD_USER } from "./actionTypes.js"
+// import { ADD_USER } from "./actionTypes.js"
 
-export const addUser = (payload) => ({
-    type: ADD_USER,
-    payload
+// export const addUser = (payload) => ({
+//     type: ADD_USER,
+//     payload
 // })
