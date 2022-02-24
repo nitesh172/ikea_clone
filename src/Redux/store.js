@@ -1,10 +1,10 @@
 import { createStore, combineReducers } from "redux";
-import { reducerHome } from "./Home/reducerHome.js";
-import { reducerSignup } from "./Register/reducerSignup.js";
+import { reducerHome } from "./Home/reducerHome";
+import { reducerShop } from "./Shop/reducerShop";
 
 const rootReducer = combineReducers({
     home: reducerHome,
-    // signup: reducerSignup
+    shop: reducerShop
     
 })
 
