@@ -1,0 +1,11 @@
+
+#loginPage{
+    width: 100%;
+    height: 723px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.blueBox{
+    background-color: rgb(1,89,163);
+}
