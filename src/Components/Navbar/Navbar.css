@@ -170,9 +170,208 @@
 }
 
 
+.loginBox{
+    opacity: 0;
+    /* display: none; */
+    width: 500px;
+    height: 730px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 1050px;
+    
+    /* transform: translateX(500px); */
+    transition: all .2s linear;
+    display: none;
+    
+}
 
+
+
+.showUser{
+    position: absolute;
+    top: 0px;
+    left: 1050px;
+    width: 500px;
+    height: 730px;
+    background-color: white;
+    animation: user .2s linear ;
+ 
+}
+
+
+
+@keyframes user{
+    from{
+        transform: translateX(500px);
+        
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+#blueBox{
+    width: 100%;
+    height: 63%;
+    background-color: rgb(1,88,162);
+    box-sizing: border-box;
+    padding-top: 5%;
+}
+
+
+
+#closeIcon{
+    box-sizing: border-box;
+    margin: 0% 0 0 83%;
+    width: 40px;
+    height: 40px;
+    padding: 1.6% 0 0 1.6%;
+    border-radius: 50%;
+}
+
+#closeIcon:hover{
+    color: black;
+    background: white;
+    cursor: pointer;
+    opacity: .9;
+    transition: .2s all linear;
+}
+#closeIcon:hover #closeBIcon{
+    color: black;
+}
+
+
+#closeBIcon{
+    font-size: 1.5vw;
+    color: white;
+
+}
+
+#closeBIcon:hover{
+    color: black;
+}
+
+
+#nameText{
+    display: flex;
+    margin: 10% 0 0 6.5% ;
+}
+
+#nameText > div:nth-child(1){
+    font-size: 2.4vw;
+    color: white;
+    font-weight: 700;
+}
+
+#logDiv{
+
+    width: 85px;
+    height: 40px;
+    background-color: white;
+    box-sizing: border-box;
+
+    border-radius: 20px;
+    text-align: center;
+    padding: 11% 0 0 0;
+    font-size: .85vw;
+    font-weight: 700;
+}
+
+#logDiv:hover{
+    opacity: .95;
+    cursor: pointer;
+}
+
+#nameText > div:nth-child(2){
+    margin: 2% 0 0 57%;
+    box-sizing: border-box;
+    
+}
+
+#line{
+   box-sizing: border-box;
+   padding-bottom: 8%;
+    
+}
+
+#line1{
+    display: flex;
+    border-top: 1px solid rgb(48,118,178);
+    box-sizing: border-box;
+    padding-bottom:5% ;
+}
+
+#strong{
+    font-weight: 600;
+    /* font-size: ; */
+}
+#line1>div:nth-child(1){
+    color: white;
+    font-size: .85vw;
+    margin: 5% 0 0 7%;
+    line-height: 20px;
+}
+
+#line1 >div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#goIconB{
+    margin: 120% 0 0 90%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20% 0 0 0;
+    text-align: center;
+}
+
+#goIconB:hover{
+    opacity: .95;
+}
+
+
+#goIconB1{
+    margin: 120% 0 0 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20% 0 0 0;
+    text-align: center;
+}
+
+#goIconB1:hover{
+    opacity: .95;
+}
+
+.goIcon{
+    font-size: 1.6vw;
+    font-weight: 400;
+
+}
+
+#shopp{
+    font-size: .95vw;
+    margin: 9% 0 0 8%;
+}
+
+#shopp>div{
+   margin-bottom: 5%;
+}
+
+#shopp>div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
 div{
     /* border: .1px solid black; */
+
 }

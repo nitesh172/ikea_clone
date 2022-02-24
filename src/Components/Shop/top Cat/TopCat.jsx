@@ -4,6 +4,7 @@ import "./TopCat.css"
 
 export const TopCat = ({firstImgArr, firstNameArr}) => {
 
+  let i = -1;
     // console.log(firstImgArr);
 
   return (
@@ -11,12 +12,16 @@ export const TopCat = ({firstImgArr, firstNameArr}) => {
         {
             
            firstImgArr.map((img)=>{
-                let i = 0;
-
+                  i++
                 return ( <div id='box'>
                     
-                        <div id='imgDiv' style={{backgroundImage:`url(${img})`}}>
+                        <div id='imgDiv'>
+                              <img src={img} alt="" />
                             
+                        </div>
+
+                        <div id='onImgBox'>
+                            {firstNameArr[i]}
                         </div>
 
 

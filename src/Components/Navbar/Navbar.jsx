@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import "./Navbar.css"
-import {IoSearchSharp} from "react-icons/io5"
+import {IoSearchSharp, IoCloseSharp, IoChevronForward} from "react-icons/io5"
 import {BsCamera} from "react-icons/bs"
 import {RiTruckLine} from "react-icons/ri"
 import {FiUser} from "react-icons/fi"
@@ -10,6 +10,9 @@ import { Menu } from './Menu/Menu'
 
 
 export const Navbar = () => {
+
+    const focusUser = useRef(null)
+    const [activeCls, setActiveCls] = useState(false)
 
     
   return (
@@ -55,7 +58,10 @@ export const Navbar = () => {
                             </div>
                         </div>
                         <div>
-                            <div id='userBox'>
+                            <div id='userBox' onClick={()=>{
+                                // alert()
+                                setActiveCls(true)
+                            }}>
 
                                 <FiUser className='insIcons'></FiUser>
                             </div>
@@ -81,7 +87,71 @@ export const Navbar = () => {
             </div>
 
         </div>
+                            
+        <div className={activeCls ? "showUser " : "loginBox hideUser"} >
 
+            <div id='blueBox'>
+
+                
+                    <div id='closeIcon'>
+
+                        <IoCloseSharp id='closeBIcon' onClick={()=>{
+                            setActiveCls(false)
+                        }}></IoCloseSharp>
+                                
+                    </div>
+
+                <div id='line'>
+                    <div id='nameText'>
+                        <div>Hej</div>
+                        <div>
+                            <div id='logDiv'>
+                                Log in
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>          
+
+                <div id='line1'>
+                    <div>
+                        <strong id='strong' style={{fontSize:".95vw"}}>Join IKEA Family</strong> <br />
+                        Get access to a number of member benefits. Enjoy <br /> guaranteed discount, free workshops, exclusive previews <br /> and a lot more when you join. Its free!
+                    </div>
+                    <div>
+                        <div id='goIconB'>
+                                <IoChevronForward className='goIcon'></IoChevronForward>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='line1'>
+                    <div>
+                        <strong id='strong' style={{fontSize:".95vw"}}>Join IKEA Businees Network</strong> <br />
+                        Get access to a service, offers and benefits to help your <br /> businees needs. Together, we can help your businees to<br />  grow.  Its free!
+                    </div>
+                    <div>
+                        <div id='goIconB1'>
+                                <IoChevronForward className='goIcon'></IoChevronForward>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div id='shopp'>
+            <div>
+                Shopping list
+            </div>
+            <div>
+                Planners
+            </div>
+        </div>
+
+
+        </div>
+
+        
 
 
         
