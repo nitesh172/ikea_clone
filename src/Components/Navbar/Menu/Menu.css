@@ -378,6 +378,14 @@
     }
 }
 
+.pShow{
+    display: block;
+}
+
+.pHide{
+    display: none;
+}
+
 
 
 

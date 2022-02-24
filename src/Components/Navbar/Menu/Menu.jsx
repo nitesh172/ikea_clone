@@ -22,6 +22,14 @@ export const Menu = () => {
   const focusFurniture = useRef(null)
   const focusKitchen  = useRef(null)
 
+  const [pBox, setPBox] = useState(false)
+  const [fBox, setFBox] = useState(false)
+  const [kBox, setKBox] = useState(false)
+  const [bBox, setBBox] = useState(false)
+  const [sBox, setSBox] = useState(false)
+  const [wBox, setWBox] = useState(false)
+  
+
 
   return (
  
@@ -163,29 +171,56 @@ export const Menu = () => {
 
                     <div>
                         <div id="Furniture" onClick={()=>{
+                          setPBox(!pBox)
+                          setKBox(false)
+                          setBBox(false)
+                          setSBox(false)
+                          setWBox(false)
+                          setFBox(true)
                           
-                          if(i%2 == 0){
-                            focusFurniture.current.classList.remove("non")
-                            i++;
-                          }else{
-                            focusFurniture.current.classList.add("non")
-                            i++
-                          }
                         }}>Furniture</div>
                         <div onClick={()=>{
-                            
-                            if(i%2 == 0){
-                            focusKitchen.current.classList.remove("non")
-                            i++;
-                          }else{
-                            focusKitchen.current.classList.add("non")
-                            i++
-                          }
+                          setPBox(pBox ? true : false)
+                          setBBox(false)
+                          setSBox(false)
+                          setWBox(false)
+                          setFBox(false)
+                          setKBox(true)
+                           
                         }}>Kitchen & appliances</div>
                         <div onClick={()=>{
+
+                          
+                          setPBox(pBox ? true : false)
+                          setSBox(false)
+                          setWBox(false)
+                          setFBox(false)
+                          setKBox(false)
+                          setBBox(true)
+
                         }}>Beds & mattresses</div>
-                        <div>Storage & organisation</div>
-                        <div>Working from home</div>
+                        <div  onClick={()=>{
+
+                          
+                          setPBox(pBox ? true : false)
+                          setWBox(false)
+                          setFBox(false)
+                          setKBox(false)
+                          setBBox(false)
+                          setSBox(true)
+
+                        }}>Storage & organisation</div>
+                        <div  onClick={()=>{
+
+                          
+                          setPBox(pBox ? true : false)
+                          setSBox(false)
+                          setFBox(false)
+                          setKBox(false)
+                          setBBox(false)
+                          setWBox(true)
+
+                        }}>Working from home</div>
                         <div>Textiles</div>
                         <div>Decoration</div>
                         <div>Bathroom products</div>
@@ -201,8 +236,32 @@ export const Menu = () => {
 
       </div>
 
-      <div className="ProdBox non" ref={focusFurniture}>
-              sidF
+      <div className={pBox ? "ProdBox" : "non"} ref={focusFurniture}>
+              
+              <div className={fBox ? "pShow" : "pHide"}>
+                        
+                <div>
+                   
+                </div>      
+                        
+              </div>
+
+              <div className={kBox ? "pShow" : "pHide"}>
+
+                        sidK
+              </div>
+
+              <div className={bBox ? "pShow" : "pHide"}>
+                sidB
+              </div>
+
+              <div className={sBox ? "pShow" : "pHide"}>
+                sidS
+              </div>
+
+              <div className={wBox ? "pShow" : "pHide"}>
+                sidW
+              </div>
 
       </div>
 
