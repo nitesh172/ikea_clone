@@ -8,7 +8,171 @@
 
     width: 88%;
     margin: 5% auto auto 8.8%;
-    height: 700px;
+    height: 740px;
+    display: grid;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    grid-template-columns: 32% 32% 32% 32% 32% 32%;
+    grid-template-rows: 700px;
+    grid-gap: 2%;
+
+}
+
+.imgBox{
+    width: 100%;
+    height: 61%;
+
+}
+
+.textBox{
+    width: 100%;
+    height: 39%;
+    box-sizing: border-box;
+    padding-top: 6%;
+}
+
+.secondBoxText{
+    font-size: 1.7vw;
+    margin: 0 0 0 8%;
+    font-weight: 700;
+}
+
+.secondBoxText:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.circleBox{
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    margin: 29% 0 0 7%;
+}
+
+.circleBox:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.forArrIcon{
+    font-size: 1.5vw;
+    margin: 30% 0 0 26%;
+}
+
+#text2{
+    font-size: 1.1vw;
+    margin: 2% 8% 0 8%;
+}
+
+
+.c1{
+    background-color: rgb(247,167,78);
+}
+
+.c2{
+    background-color: rgb(20,117,77);
+}
+
+.c3{
+    background-color: rgb(54,52,55);
+}
+
+.c4{
+    background-color: rgb(17,44,84);
+}
+
+.c5{
+    background-color: rgb(255,219,0);
+}
+
+.c6{
+    background-color: rgb(238,156,156);
+}
+
+.t1{
+    color: rgb(17,16,16);
+}
+
+.t2{
+    color: white;
+}
+
+.r1{
+    background-color: black;
+}
+
+.r2{
+    background-color: white;
+}
+
+.cw{
+    color: white;
+}
+.cB{
+    color: black;
+}
+
+.circleBox1{
+     width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    margin: 20% 0 0 8%;
+}
+.circleBox1:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+
+.circleBox2{
+     width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    margin: 17% 0 0 8%;
+}
+.circleBox2:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+
+.circleBox3{
+     width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    margin: 23% 0 0 8%;
+}
+.circleBox3:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+
+
+
+div{
+    /* border: .1px solid black; */
+}
+
+#secondBox::-webkit-scrollbar {
+  height: 3px;
+}
+
+
+#secondBox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgb(223,222,222); 
+  border-radius: 3px;
+}
+
+
+ 
+#secondBox::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 3px;
+}
+
+#secondBox::-webkit-scrollbar-thumb:hover {
+  width: 5px;
 }
 
 #thirdBox{
@@ -29,7 +193,7 @@
 
 #topCat{
     width: 80%;
-    height: 750px;
+    /* height: 750px; */
 }
 
 #topText{
@@ -42,7 +206,160 @@
     margin-top: 14%;
 }
 
+#familyOffer{
+    width: 88%;
+    margin: 5% 0 0 8.8%;
+    height: 700px;
+    border-top: 1px solid rgb(223,222,222);
+}
 
+#familyOfT{
+    margin: 5% 0 0 0;
+    font-size: 1.55vw;
+    font-weight: 700;
+}
+
+#itemBox{
+    display: grid;
+    grid-template-columns:  23.8% 23.8% 23.8% 23.8%;
+    grid-gap: 1.5%;
+    width: 100%;
+    height: 76%;
+    margin-top: 5%;
+}
+
+#prodImgBox{
+    width: 100%;
+    height: 60%;
+
+}
+
+.blueText{
+    font-size: .95vw;
+    font-weight: 700;
+    color: rgb(1,118,193);
+    margin: 2% 0 0 0%;
+}
+
+.nameText{
+    font-size: .92vw;
+    font-weight: 700;
+    margin-top: 2.2%;
+}
+
+.descText{
+    margin-top: 1.5;
+    font-size: 1vw;
+    color: rgb(72,73,73);
+    
+}
+.small{
+    font-size: .75vw;
+    font-weight: 700;
+    margin-top: 1%;
+}
+
+.bigT{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.starBox{
+    margin-top: 2.2%;
+}
+
+.priceN{
+    margin-top: 2.2%;
+    font-size: .85vw;
+    color: rgb(72,73,73);
+}
+
+.starColor{
+    color: rgb(244,244,245);
+}
+
+
+#prodImgBox{
+    background-image: url("https://i.postimg.cc/cJrJvPSP/sekiner-ook-for-door-white-0992055-pe819778-s5.jpg") ;
+    background-size: contain;
+}
+
+#itemBox >div:hover{
+    cursor: pointer;
+}
+
+#itemBox >div:hover #prodImgBox{
+    cursor: pointer;
+    background-image: url("https://i.postimg.cc/jdwvhShj/sekiner-ook-for-door-white-1014283-pe829573-s5.jpg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s all linear;
+}
+
+#prodImgBox1{
+    width: 100%;
+    height: 60%;
+
+}
+
+#prodImgBox1{
+    background-image: url("https://i.postimg.cc/KYbtMnfn/hallbar-c-waste-light-grey-0742700-pe742765-s5.jpg") ;
+    background-size: contain;
+}
+
+#itemBox >div:hover #prodImgBox1 {
+    cursor: pointer;
+    background-image: url("https://i.postimg.cc/QMSKKvH3/hallbar-c-waste-light-grey-0924715-pe788626-s5.jpg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s all linear;
+}
+
+
+#prodImgBox2{
+    width: 100%;
+    height: 60%;
+
+}
+
+#prodImgBox2{
+    background-image: url("https://i.postimg.cc/Vv7cjBX5/hemlaga-pan-with-lid-black-0789082-pe763810-s5.jpg") ;
+    background-size: contain;
+}
+
+#itemBox >div:hover #prodImgBox2 {
+    cursor: pointer;
+    background-image: url("https://i.postimg.cc/xd75bkkY/hemlaga-pan-with-lid-black-0789081-pe763812-s5.jpg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s all linear;
+}
+
+
+#prodImgBox3{
+    width: 100%;
+    height: 60%;
+
+}
+
+#prodImgBox3{
+    background-image: url("https://i.postimg.cc/jdKXNYjW/aengarn-p-football-pattern-0840928-pe778704-s5.jpg") ;
+    background-size: contain;
+}
+
+#itemBox >div:hover #prodImgBox3 {
+    cursor: pointer;
+    background-image: url("https://i.postimg.cc/g2x6Lg3X/aengarn-p-football-pattern-0943271-pe796870-s5.jpg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s all linear;
+}
+
+
+
+#threeBox{
+
+}
 
 
 #empty{

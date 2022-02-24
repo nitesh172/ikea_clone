@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Shop.css"
+import {IoArrowForwardSharp} from "react-icons/io5"
+import {AiFillStar} from "react-icons/ai"
 import { Navbar } from '../Navbar/Navbar'
 import { TopCat } from './top Cat/TopCat'
 
@@ -33,12 +35,104 @@ export const Shop = () => {
 
         <div id='secondBox'>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <div className='imgBox'>
+                    <img src="https://i.postimg.cc/jdYR9kGT/fb608e0af75a921f2617f61e3f2bd37e.png" alt="" className='img' />
+                </div>
+                <div className='textBox  c1 t1'>
+                    <div className='secondBoxText'>
+                        Work from home essentials
+                    </div>
+
+                    <div className='circleBox r1'>
+                        <IoArrowForwardSharp className='cw forArrIcon' ></IoArrowForwardSharp>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                 <div className='imgBox'>
+                    <img src="https://i.postimg.cc/SNPntpWK/2a232513f1b1e42482f586141ad0f82e.png" alt="" className='img' />
+                </div>
+                <div className='textBox  c2 t2'>
+                    <div className='secondBoxText'>
+                        Everyday essentials under Rs.499
+                    </div>
+
+                    <div className='circleBox1 r2'>
+                        <IoArrowForwardSharp className='cB forArrIcon' ></IoArrowForwardSharp>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                 <div className='imgBox'>
+                    <img src="https://i.postimg.cc/VL6XZ8VS/719174fb89ee6688dc7f88041e65a10d.jpg" alt="" className='img' />
+                </div>
+                <div className='textBox  c3 t2'>
+                    <div className='secondBoxText'>
+                        Furniture under Rs.2999
+                    </div>
+
+                    <div className='circleBox r2'>
+                        <IoArrowForwardSharp className='cB forArrIcon' ></IoArrowForwardSharp>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div className='imgBox'>
+                    <img src="https://i.postimg.cc/k5pxdhRJ/f7968dabe67eb0992ad258db84c6af73.png" alt="" className='img' />
+                </div>
+                <div className='textBox  c4 t2'>
+                    <div className='secondBoxText'>
+                        Textiles under Rs.999
+                    </div>
+
+                    <div id='text2'>
+                        Bedsheets, curtains, towels and more at affordable prices
+                    </div>
+
+                    <div className='circleBox2 r2'>
+                        <IoArrowForwardSharp className='cB forArrIcon' ></IoArrowForwardSharp>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div className='imgBox'>
+                    <img src="https://i.postimg.cc/mDnV8gyS/744ecbf3bce84a08836095578946fae1.png" alt="" className='img' />
+                </div>
+                <div className='textBox  c5 t1'>
+                    <div className='secondBoxText'>
+                        Our lowest price
+                    </div>
+
+                    <div id='text2'>
+                        Shop our lowest price products
+                    </div>
+
+                    <div className='circleBox3 r1'>
+                        <IoArrowForwardSharp className='cw forArrIcon' ></IoArrowForwardSharp>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div className='imgBox'>
+                    <img src="https://i.postimg.cc/j2V3RjnS/8e596e44b235326949eda784a919a6b5.png" alt="" className='img' />
+                </div>
+                <div className='textBox  c6 t1'>
+                    <div className='secondBoxText'>
+                        Bathroom essentials
+                    </div>
+
+                    <div className='circleBox r1'>
+                        <IoArrowForwardSharp className='cw forArrIcon' ></IoArrowForwardSharp>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -62,6 +156,117 @@ export const Shop = () => {
 
         </div>
 
+
+        <div id='familyOffer'>
+
+            <div id='familyOfT'>IKEA family offers</div>
+
+            <div id='itemBox'>
+                    <div>
+                        <div id='prodImgBox'></div>
+
+                        <div className ='blueText'>
+                            IKEA Family Price
+                        </div>
+
+                        <div className='nameText'>SEKINER</div>
+
+                        <div className='descText'>Hook for door</div>
+
+                        <div className='priceN'>Normal price Rs.99</div>
+
+                        <div className='small'>Rs. <span className='bigT'>79</span></div>
+
+                        <div className='starBox'>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar className='starColor'></AiFillStar>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <div id='prodImgBox1'></div>
+
+                         <div className ='blueText'>
+                            IKEA Family Price
+                        </div>
+
+                        <div className='nameText'>HALLBAR</div>
+
+                        <div className='descText'>Bin with lid for organic  wast</div>
+
+                        <div className='priceN'>Normal price Rs.500</div>
+
+                        <div className='small'>Rs. <span className='bigT'>400</span></div>
+
+                        <div className='starBox'>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                        </div>
+
+                    </div>
+
+                    <div>
+                         <div id='prodImgBox2'></div>
+
+                          <div className ='blueText'>
+                            IKEA Family Price
+                        </div>
+
+                        <div className='nameText'>HEMLAGAD</div>
+
+                        <div className='descText'>Saucepan with lid</div>
+
+                        <div className='priceN'>Normal price Rs.999</div>
+
+                        <div className='small'>Rs. <span className='bigT'>699</span></div>
+
+                        <div className='starBox'>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar className='starColor'></AiFillStar>
+                            <AiFillStar className='starColor'></AiFillStar>
+                            <AiFillStar className='starColor'></AiFillStar>
+                            <AiFillStar className='starColor'></AiFillStar>
+                        </div>
+                    </div>
+
+                    <div>
+                         <div id='prodImgBox3'></div>
+
+                          <div className ='blueText'>
+                            IKEA Family Price
+                        </div>
+
+                        <div className='nameText'>ANGARNA</div>
+
+                        <div className='descText'>LED table lamp</div>
+
+                        <div className='priceN'>Normal price Rs.1,490</div>
+
+                        <div className='small'>Rs. <span className='bigT'>1,190</span></div>
+
+                        <div className='starBox'>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+{/* 
+
+        <div id='threeBox'>
+
+
+        </div> */}
 
 
 
