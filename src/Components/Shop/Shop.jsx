@@ -389,6 +389,37 @@ export const Shop = () => {
         </div>
 
 
+        <div id='ideasDiv'>
+            <div id='ideaHeadT'>More ideas and inspiration</div>
+
+            <div id='allCatDiv'>
+
+                <div>All</div>
+                <div>Bedroom</div>
+                <div>Living room</div>
+                <div>Kitchen</div>
+                <div>Workspace</div>
+                <div>Outdoor</div>
+                <div>Bathroom</div>
+                <div> Children room</div>
+                <div>Dining</div>
+                <div>Hallway</div>
+                <div>Accessories</div>
+
+            </div>
+
+
+            <div id='allImgsDiv'>
+
+                <div>
+                    <div className='ff'></div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
         <div id="empty">
 
         </div>

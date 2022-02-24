@@ -512,11 +512,63 @@ div{
     cursor: pointer;
 }
 
-#empty{
+#ideasDiv{
+    width: 88%;
+    margin: 5% 0 0 8.8%;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+#allCatDiv{
+    display: grid;
+    grid-template-columns: repeat(11, 8.09%);
+    width: 100%;
+    height: 40px;
+    margin-top: 3%;
+    grid-gap: 1%;
+    position: sticky;
+}
+
+#allCatDiv > div{
+    border-radius: 20px;
+    font-size: .8vw;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    padding-top: 8.5%;
+    color: rgb(17,16,16);
+    /* opacity: .8; */
+    
+}
+
+#allCatDiv > div:hover{
+    
+    background-color: rgb(222,222,223);
+    cursor: pointer;
+    transition: .2s all linear;
+}
+
+#allImgsDiv{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+    margin-top: 3%;
+    height: 1000px;
+
     margin-top: 2%;
+}
+
+.ff{
+    width: 100%;
+    /* height: ; */
+}
+
+
+#empty{
     height: 800px;
+    
 }
 
 div{
-    /* border: .1px solid black; */
+    border: .1px solid black;
 }
