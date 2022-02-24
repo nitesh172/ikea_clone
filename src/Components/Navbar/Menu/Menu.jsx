@@ -38,7 +38,7 @@ export const Menu = () => {
        <BiMenu id="menuIcon" onClick={()=> {
          dispatch(showFunction())
         }}></BiMenu>
-
+                    
       <div className={active ? "show" : "leftBox " } id="h"   >
 
           <div className="heading">
@@ -235,32 +235,177 @@ export const Menu = () => {
         </div>
 
       </div>
-
+                        
       <div className={pBox ? "ProdBox" : "non"} ref={focusFurniture}>
-              
+
+                        
               <div className={fBox ? "pShow" : "pHide"}>
                         
-                <div>
-                   
-                </div>      
+                <div id="Box">
+
+                  <div className="headingT">
+                        Furniture
+                  </div>      
+
+                  <div className="shopAll">
+                        Shop all
+                  </div>
+
+                  <div className="allCatBox">
+                        
+                        <div>Gaming funriture</div>
+                        <div> Furniture set</div>
+                        <div>Beds</div>
+                        <div>Sofas & armchairs</div>
+                        <div> Bookcases & shelving units</div>
+                        <div> Tables & desks</div>
+                        <div>Caninets & cupboards</div>
+                        <div>TV & media furniture</div>
+                        <div>Chest of drawers & deawer units</div>
+                        <div>Wardrobs</div>
+                        <div>Chairs</div>
+                        <div>Outdoor furniture</div>
+                        <div>Sideboards, buffets & console tables</div>
+                        <div>Children's furniture</div>
+                        <div>Room dividers</div>
+                        <div>Trolleys</div>
+                        <div>Bar furniture</div>
+                        <div>Armchairs & chaise longues</div>
+                        <div>Cafe furniture</div>
+                        <div>Nursery furniture</div>
+
+
+                  </div>
+
+
+                </div>
                         
               </div>
 
               <div className={kBox ? "pShow" : "pHide"}>
 
-                        sidK
+                <div id="Box">
+
+                  <div className="headingT">
+                        Kitchen & appliances
+                  </div>      
+
+                  <div className="shopAll">
+                        Shop all
+                  </div>
+
+                  <div className="allCatBox">
+                        
+                        <div>Kitchens</div>
+                        <div>METOD interior fittings</div>
+                        <div>Pantry</div>
+                        <div>Wall storage</div>
+                        <div>Kitchen worktops</div>
+                        <div>Kitchen appliances</div>
+                        <div>Kitchen islands & trolleys</div>
+                        <div>Knobs & handles</div>
+                        <div>Kitchen lighting</div>
+                        <div>METOD Kitchen taps & sinks</div>
+                        <div>Splashbacks & wall panels</div>
+                        <div>Unit kitchens</div>
+
+                  </div>
+
+
+                </div>
               </div>
 
               <div className={bBox ? "pShow" : "pHide"}>
-                sidB
+                <div id="Box">
+
+                  <div className="headingT">
+                        Beds & mattresses
+                  </div>      
+
+                  <div className="shopAll">
+                        Shop all
+                  </div>
+
+                  <div className="allCatBox">
+                        
+                       <div>Beds</div>
+                       <div>Bedding</div>
+                       <div>Mattresses</div>
+                       <div>Bedside tables</div>
+                       <div>under bed storage</div>
+                       <div>Bed slats</div>
+                       <div>Bedroom furniture sets</div>
+
+
+                  </div>
+
+
+                </div>
               </div>
 
               <div className={sBox ? "pShow" : "pHide"}>
-                sidS
+                <div id="Box">
+
+                  <div className="headingT">
+                        Storage & organisations
+                  </div>      
+
+                  <div className="shopAll">
+                        Shop all
+                  </div>
+
+                  <div className="allCatBox">
+                       
+                       <div>Bookcases & shelving units</div>
+                       <div>Storage solution systems</div>
+                       <div>Cabinets & cupboards</div>
+                       <div>TV & media furniture</div>
+                       <div>Chest of drawers & drawer units</div>
+                       <div>Wardrobes</div>
+                       <div>Small storage & organisers</div>
+                       <div>Sideboards, buffets & console tables</div>
+                       <div>Hooks & wall organisation</div>
+                       <div>Clothes stands & shoe racks</div>
+                       <div>Trolleys</div>
+                       <div>Bags</div>
+                       <div>Moving supplies</div>
+                       <div>Wall shelves</div>
+
+
+                  </div>
+
+
+                </div>
               </div>
 
               <div className={wBox ? "pShow" : "pHide"}>
-                sidW
+                <div id="Box">
+
+                  <div className="headingT">
+                        Work from home
+                  </div>      
+
+                  <div className="shopAll">
+                        Shop all
+                  </div>
+
+                  <div className="allCatBox">
+                       
+                       <div>Desk chairs</div>
+                       <div>Desk & computer desks</div>
+                       <div>Desk & chair sets</div>
+                       <div>Drawer units</div>
+                       <div>Storage units & cabinets</div>
+                       <div>Room divider</div>
+                       <div>Work & study lamps</div>
+                       <div>Cables & chargers</div>
+                       <div>Paper & media organisers</div>
+
+
+                  </div>
+
+
+                </div>
               </div>
 
       </div>

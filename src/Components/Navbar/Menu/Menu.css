@@ -387,7 +387,45 @@
 }
 
 
+#Box{
+    box-sizing: border-box;
 
+    margin: 35.5% 0 0 0;
+    padding-top: 5%;
+    padding-left: 5%;
+
+    height: 600px;
+    overflow: scroll;
+
+    /* border-left: 1px solid rgb(223,222,222) ; */
+}
+.headingT{
+    /* margin: 10% 0 0 5%; */
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+
+.shopAll{
+    margin: 13% 0 0 0 ;
+    font-size: .9vw;
+    font-weight: 700;
+}
+
+.allCatBox{
+    margin-top: 12%;
+}
+
+.allCatBox >div{
+    margin-bottom: 5%;
+    font-size: .9vw;
+    font-weight: 400;
+}
+
+.allCatBox >div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
 
