@@ -7,6 +7,7 @@ import {FiUser} from "react-icons/fi"
 import {AiOutlineShoppingCart} from "react-icons/ai"
 import { Info } from './Info/Info'
 import { Menu } from './Menu/Menu'
+import { useNavigate } from 'react-router-dom'
 
 
 export const Navbar = () => {
@@ -14,7 +15,7 @@ export const Navbar = () => {
     const focusUser = useRef(null)
     const [activeCls, setActiveCls] = useState(false)
 
-    
+    const navigate = useNavigate()
   return (
     <div>
         <Info></Info>
@@ -105,9 +106,14 @@ export const Navbar = () => {
                     <div id='nameText'>
                         <div>Hej</div>
                         <div>
-                            <div id='logDiv'>
-                                Log in
+                            
+                            <div id='logDiv' onClick={()=>{
+                                navigate("/login")
+                            }}>
+                                    Log in
                             </div>
+                            
+
                         </div>
                     </div>
                 
