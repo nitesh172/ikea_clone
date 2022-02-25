@@ -1,0 +1,126 @@
+.logins-container {
+    display: flex;
+}
+
+.login-left-div {
+    width: 40%;
+    background-color: #0058ab;
+    height: 100vh;
+}
+
+.login-right-div {
+    width: 60%;
+    height: 100vh;
+}
+
+/* Left container */
+
+#loginPage{
+    width: 100%;
+    height: 723px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.blueBox{
+    background-color: rgb(1,89,163);
+    
+}
+
+#iconBox{
+    display: flex;
+    margin: 7% 0 0 5%;
+}
+
+
+.backIcon{
+    font-size: 1.5vw;
+    color: white;
+}
+
+#logoBox{
+    width: 20% ;
+    height: 35px;
+    margin: -1% 0 0 8%;
+}
+
+#loginText{
+    
+    font-size: 2.3vw;
+    width: 70%;
+    font-weight: 700;
+    color: white;
+    margin: 28% 0 0 18%;
+}
+
+#secondT{
+    width: 65%;
+    font-size: .95vw;
+    font-weight: 400;
+    color: white;
+    margin: 2% 0 0 18%;
+}
+
+#smallText{
+    color: white;
+    font-size: .76vw;
+    margin: 30% 0 0 18%;
+}
+
+
+/* Right container */
+
+.login-right-inner-div {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.login-form-div {
+    width: 70%;
+}
+
+.login-form input {
+    width: 100%;
+}
+
+/* ********Submit btn********** */
+
+.login-submit-btn {
+    color: white;
+    background-color: #0058ab;
+    padding: 1.2rem;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* **********Login btn********** */
+.login-btn {
+    color: #222;
+    background-color: #eee;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+    border-radius: 30px;
+}
+
+.below-sub-text,
+.login-btn span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.below-sub-text {
+    color: #222;
+    margin: 4rem 0 1.6rem 0;
+}
+
+
+.login-below-input-text {
+    transform: translate(1rem, -1.5rem)
+}
+
+.login-below-input-text u {
+    font-size: 14px;
+    font-weight: 700;
+    color: #444;
+}

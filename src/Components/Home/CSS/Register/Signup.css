@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-size: 16px; */
     font-family: "Noto IKEA", "Noto Sans", Roboto, "Open Sans", system-ui, sans-serif;
 }
 
@@ -35,7 +34,7 @@
 
 
 .blue-text {
-    color: blue;
+    color: #0058ab;
 } 
 
 /* Image Container */
@@ -162,8 +161,9 @@
     pointer-events: none;
     transform: translate(1rem, 2.5rem);
     transition: all 0.2s ease-in-out;
-}
+} 
 
+/* .form-input:valid + .animated-label, */
 .form-input:focus + .animated-label {
     font-size: 14px;
     transform: translate(1rem, 1rem);
@@ -305,7 +305,3 @@
 
 /* ******************************RIGHT CONTAINER ENDS********************************** */
   
-
-
-
-

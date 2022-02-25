@@ -191,12 +191,12 @@
 .showUser{
     position: absolute;
     top: 0px;
-    left: 1050px;
+    right: 0;
     width: 500px;
     height: 730px;
     background-color: white;
     animation: user .2s linear ;
- 
+    z-index: 1;
 }
 
 
