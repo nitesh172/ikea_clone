@@ -1,4 +1,4 @@
-import {Footer} from './Footer'
+import {MainFooter} from './MainFooter'
 import { Navbar } from "../../Navbar/Navbar"
 
 import '../CSS/Cart.css'
@@ -165,7 +165,7 @@ export const Cart = () => {
 
 
 
-   <Footer />
+   <MainFooter />
 
     </div>
   )

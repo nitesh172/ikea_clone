@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import "../CSS/Gamepage.css"
 import {Product} from './Product'
-import {Footer} from './Footer'
+import {MainFooter} from './MainFooter'
 import { Navbar } from "../../Navbar/Navbar"
 import axios from 'axios'
 import { useParams } from "react-router-dom"
@@ -383,7 +383,7 @@ export const GamePage = () => {
      
         { /* Footer starts here ------------------------------------------------------------------------------- */  } 
     
-       <Footer />
+       <MainFooter />
 
 
 
