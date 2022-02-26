@@ -13,7 +13,7 @@
 
 
 .stepNoDiv{
-    width: 70%;
+    width: 55%;
     margin: 3.5% 0 0 0%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -26,27 +26,29 @@
 
 }
 
-#iconDiv{
-    
-}
 
 #numb{
     margin: -101% 0 0 28% ;
     z-index: 1;
     font-size: .8vw;
     color: white;
+    font-weight: 600;
 }
 
 #nameText{
-    font-size: .76vw;
-    
+    font-size: .79vw;
+    margin-left: 5%;
     margin-top: .8%;
 }
 
-#step
+.setp1c{
+    color: rgb(255,103,1);
+    
+}
 
 .step2c{
     color: rgb(152,153,152);
+    
 }
 
 
