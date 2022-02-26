@@ -30,7 +30,7 @@ export const Shop = () => {
         <Navbar></Navbar>
 
         <div>
-            <img src="https://www.ikea.com/images/72/c9/72c9d840fa0fb57ca9b8ae4910e246e5.png?f=sg" className='mainImg' alt="" />
+            <img src="https://i.postimg.cc/4yHS22SZ/6a321b56d91b9c43eda1f92115131e5b.png" className='mainImg' alt="" />
         </div>
 
         <div id='secondBox'>
@@ -387,6 +387,7 @@ export const Shop = () => {
             </div>
 
         </div>
+        
 
 
         <div id='ideasDiv'>
@@ -412,13 +413,100 @@ export const Shop = () => {
             <div id='allImgsDiv'>
 
                 <div>
-                    <div className='ff'></div>
+                    <div className='ff'>
+                        <img src="https://i.postimg.cc/dVx1PLWB/PH171249-crop001.jpg" className='img' alt="" />
+                    </div>
+                    <div className='fs'>
+                        <img src="https://i.postimg.cc/3JwY830b/PH167671-crop001.jpg" className='img' alt="" />
+                    
+                    </div>
+                    <div className='ft'>
+                        <img src="https://i.postimg.cc/0jFW1Gwv/PH181295-crop001.jpg" className='img' alt="" />
+                    </div>
+                    <div className='ffo'>
+                        <img src="https://i.postimg.cc/bNbcNdNg/PH176591.jpg" className='img' alt="" />
+                    </div>
                 </div>
-                <div></div>
-                <div></div>
+                <div>
+                    <div className='ff1'>
+                        <img src="https://i.postimg.cc/pT9cG1mC/PH175892-crop001.jpg" className='img' alt="" />
+                    </div>
+                    
+                    <div className='fs'>
+                        <img src="https://i.postimg.cc/PqJSJFQH/PH178850-crop001.jpg" className='img' alt="" />
+                    </div>
+                    <div className='ft'>
+                        <img src="https://i.postimg.cc/sf7wMW7M/PH180790.jpg" className='img' alt="" />
+                    </div>
+                    <div className='ffo'>
+                        <img src="https://i.postimg.cc/Wbs6tHsy/PH171523-crop001.jpg" className='img' alt="" />
+                    </div>
+
+                </div>
+                <div>
+                    <div className='ff'>
+                        <img src="https://i.postimg.cc/50wL2wT1/PH165592-crop001.jpg" className='img' alt="" />
+                    </div>
+                    <div className='fs'>
+                        <img src="https://i.postimg.cc/wTWJMxft/PH178935-crop001.jpg" className='img' alt="" />
+                    </div>
+                    <div className='ft'>
+                        <img src="https://i.postimg.cc/Wz1zcgP5/PH181284-crop001.jpg" className='img' alt="" />
+                    </div>
+                    <div className='ffo'>
+                        <img src="https://i.postimg.cc/T3DwxTZv/PH170691-crop001.jpg" className='img' alt="" />
+                    </div>
+                </div>
             </div>
 
         </div>
+
+
+
+        <div id='covid19Div'>
+
+            <div className='covidHead'>Important information</div>
+
+            <div id='twoBox'>
+
+                <div>
+
+                    <div className='infoHead'>
+
+                        Coronavirus (COVID-19) information
+                    </div>
+
+                    <div className='covidImgDiv'>
+                        <img src="https://i.postimg.cc/wTHXGbPV/674d38ec377caa8b14da0718ae34638e.jpg" className='img' alt="" />
+                    </div>
+
+                    <div className='learnDiv'>
+                        Learn more
+                    </div>
+
+                </div>
+                <div>
+
+                    
+                    <div className='infoHead'>
+
+                        Product recalls
+                    </div>
+
+                    <div className='covidImgDiv'>
+                        <img src="https://i.postimg.cc/L5vn7vYC/bfe239c44b15ce483c987e2250df4d64.jpg" className='img' alt="" />
+                    </div>
+
+                    <div className='learnDiv'>
+                        Learn more
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
         <div id="empty">
 
