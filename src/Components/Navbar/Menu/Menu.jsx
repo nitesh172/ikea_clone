@@ -256,16 +256,17 @@ export const Menu = () => {
                   <div className="allCatBox">
                         
                         <div onClick={()=>{
-                          navigation("/Gaming furniture")
+                          
+                          navigation(`/GamePage/Gaming furniture`)
                         }}>Gaming furniture</div>
                         <div onClick={()=>{
-                          navigation("/Furniture set")
+                          navigation("/GamePage/Furniture set")
                         }}> Furniture set</div>
                         <div onClick={()=>{
-                          navigation("/Beds")
+                          navigation("/GamePage/Beds")
                         }}>Beds</div>
                         <div onClick={()=>{
-                          navigation("/Sofas & armchairs")
+                          navigation("/GamePage/Sofas & armchairs")
                         }}>Sofas & armchairs</div>
                         <div> Bookcases & shelving units</div>
                         <div> Tables & desks</div>
