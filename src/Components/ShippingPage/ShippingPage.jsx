@@ -13,13 +13,13 @@ export const ShippingPage = () => {
 
         <div className='stepNoDiv'>
 
-                 <div className='insStep'>
+                <div className='insStep'>
                     <div id='iconDiv'>
                         <img src={img} alt="" />
                         <div id='numb' > 1</div>
                     </div>
 
-                    <div id='nameText'>
+                    <div id='nameText' className='setp1c'>
                         Shopping cart (Step 1 of 3)
                     </div>
                 </div>
@@ -31,7 +31,7 @@ export const ShippingPage = () => {
                     </div>
 
                     <div id='nameText' className='step2c'>
-                        Shopping cart (Step 1 of 3)
+                        Delivery information (Step 2 of 3)
                     </div>
                 </div>
 
@@ -41,8 +41,8 @@ export const ShippingPage = () => {
                         <div id='numb' > 3</div>
                     </div>
 
-                    <div id='nameText'>
-                        Shopping cart (Step 1 of 3)
+                    <div id='nameText'className='step2c'>
+                        Payment method (Step 3 of 3)
                     </div>
                 </div> 
             
