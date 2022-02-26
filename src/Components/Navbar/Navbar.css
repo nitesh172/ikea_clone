@@ -191,12 +191,12 @@
 .showUser{
     position: absolute;
     top: 0px;
-    left: 1050px;
+    right: 0px;
     width: 500px;
     height: 730px;
     background-color: white;
     animation: user .2s linear ;
- 
+    z-index: 1;
 }
 
 
@@ -271,7 +271,7 @@
     height: 40px;
     background-color: white;
     box-sizing: border-box;
-
+    text-decoration: none;
     border-radius: 20px;
     text-align: center;
     padding: 11% 0 0 0;

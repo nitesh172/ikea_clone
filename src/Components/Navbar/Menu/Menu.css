@@ -64,6 +64,8 @@
     background-color: white;
     animation:  .2s linear slideIn ;
     overflow: scroll;
+    z-index: 1;
+    position: relative;
 }
 
 .show::-webkit-scrollbar {
@@ -254,7 +256,9 @@
     overflow: scroll;
     height: 620px;
     margin: 12% 0 0 3.2%  ;
-    display: none;   
+    display: none;  
+    z-index: 1;
+    position: relative; 
     /* add display: none here */
 }
 
@@ -352,6 +356,8 @@
     left: 434px;
     background-color: white;
     animation: fur 0.2s linear;
+    z-index: 1;
+    /* position: relative; */
 }
 
 @keyframes fur{

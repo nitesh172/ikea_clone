@@ -551,21 +551,95 @@ div{
 #allImgsDiv{
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    grid-gap: 2%;
+    grid-gap: 1.8%;
     margin-top: 3%;
-    height: 1000px;
+    /* height: 3000px; */
 
     margin-top: 2%;
 }
 
 .ff{
     width: 100%;
-    /* height: ; */
+    height: 570px ;
+    
+}
+
+.fs{
+    width: 100%;
+    height: 570px;
+    margin-top: 22px;
+}
+
+.ft{
+    width: 100%;
+    height: 570px;
+    margin-top: 22px;
+}
+.ffo{
+    width: 100%;
+    height: 570px;
+    margin-top: 22px;
+}
+
+.ff1{
+    width: 100%;
+    height: 450px;
+    
 }
 
 
+#covid19Div{
+    width: 88%;
+    margin: 5% 0 0 8.8%;
+    border-top: 1px solid rgb(223,222,222);
+    box-sizing: border-box;
+    padding-top: 5%;
+    
+}
+
+.covidHead{
+    font-size: 1.6vw;
+    font-weight: 700;
+
+}
+
+#twoBox{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 500px;
+    margin-top: 3%;
+}
+
+.infoHead{
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+
+.covidImgDiv{
+    width: 100%;
+    height: 80%;
+}
+
+.learnDiv{
+    background-color: black;
+    width: 18%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: .85vw;
+    color: white;
+    font-weight: 700;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 1.5%;
+}
+
+.learnDiv:hover{
+    opacity: .85;
+    cursor: pointer;
+}
+
 #empty{
-    height: 800px;
+    height: 200px;
     
 }
 

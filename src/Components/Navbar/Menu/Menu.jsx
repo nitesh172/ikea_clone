@@ -3,7 +3,10 @@ import "./Menu.css"
 import {BiMenu} from "react-icons/bi"
 import {IoCloseSharp, IoArrowBackOutline} from "react-icons/io5"
 
+
 import {useState, useRef} from 'react'
+import {useNavigate} from "react-router-dom"
+
 import {BsGlobe2} from "react-icons/bs"
 import { useSelector, useDispatch } from "react-redux"
 import { hideFunction, showFunction } from "../../../Redux/Shop/actionShop"
@@ -11,6 +14,7 @@ import { hideFunction, showFunction } from "../../../Redux/Shop/actionShop"
 export const Menu = () => {
 
   const {active} = useSelector(store=>store.shop)
+  const navigation = useNavigate()
 
 
   const dispatch = useDispatch()
@@ -253,10 +257,19 @@ export const Menu = () => {
 
                   <div className="allCatBox">
                         
-                        <div>Gaming funriture</div>
-                        <div> Furniture set</div>
-                        <div>Beds</div>
-                        <div>Sofas & armchairs</div>
+                        <div onClick={()=>{
+                          
+                          navigation(`/GamePage/Gaming furniture`)
+                        }}>Gaming furniture</div>
+                        <div onClick={()=>{
+                          navigation("/GamePage/Furniture set")
+                        }}> Furniture set</div>
+                        <div onClick={()=>{
+                          navigation("/GamePage/Beds")
+                        }}>Beds</div>
+                        <div onClick={()=>{
+                          navigation("/GamePage/Sofas & armchairs")
+                        }}>Sofas & armchairs</div>
                         <div> Bookcases & shelving units</div>
                         <div> Tables & desks</div>
                         <div>Caninets & cupboards</div>

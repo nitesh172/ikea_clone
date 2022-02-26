@@ -1,137 +1,68 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
-import '../CSS/Footer.css';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-
-
+import "../CSS/Footer.css"
 export const Footer = () => {
-    return (
-        <div className="footer">
-            <div className="footer__top">
-                <div className="footer__info">
-                    <h3>Join IKEA Family</h3>
-                    <p>
-                    Get exclusive offers, inspiration, and lots more to help bring your ideas to life. 
-                    All for free.
-                    </p>
-                    <Link to="/login" className="footer__infoLink">
-                        <button className="footer_btn">Join us</button>
-                    </Link>
-                </div>
-                <div className="footer__infoList">
-                    <ul>
-
-
-                     <li className="footer__infoLi">
-                     <h5>IKEA Family</h5>
-                     <div className="footer__infoLinks">
-                        <a>Log in</a>
-                        <a>join IKEA Family</a>
-                        <a>Member offers</a>
-                        <a>Workshop & Events</a>
-                        
-                     </div>
-                     </li>
-
-                     
-                     
-                      
-                        <li className="footer__infoLi">
-                            <h5 className="footer__infoListTitle"> Services</h5>
-                            <div className="footer__infoLinks">
-                                <a>Design your room</a>
-                                <a>Delivery service</a>
-                                <a>My orders</a>
-                                <a>Returns &amp; claims</a>
-                                <a>Delivery</a>
-                                <a>Stock information</a>
-                                <a>Kitchen Planning</a>
-                                <a>Recalls</a>
-                                <a>Personal advice</a>
-                                <a>Track your orders</a>
-                            </div>
-                        </li>
-                       
-
-                        <li className="footer__infoLi">
-                            <h5>Shopping at IKEA</h5>
-                            <div className="footer__infoLinks">
-                                <a>Opening hours</a>
-                                <a>All stores</a>
-                                <a>Offers</a>
-                                <a>Restaurant</a>
-                                <a>Swedish Food Market</a>
-                                <a>IKEA App</a>
-                                <a>Gift card</a>
-                            </div>
-                        </li>
-
-                        <li className="footer__infoLi">
-                        <h5>About IKEA</h5>
-                        <div className="footer__infoLinks">
-                       
-                       <a>This is IKEA</a>
-                       <a>Working at IKEA</a>
-                       <a>Newsroom</a>
-                       <a>Sustainability</a>
-                       <a>Ideas</a>
-                       <a>IKEA stores</a>
-                       <a>IKEA Restaurant</a>
-                       <a>IKEA for Business</a>
-                         </div>
-                       </li>
-                       
-                    </ul>
-                </div>
-               
+  return (
+    <footer className="wrapperFooter">
+      <div className="footerContent">
+        <div className="footer-Content">
+          <div className="footerContentColumn">
+            <h1 className="columnHeading">
+              A world of inspiration for your home
+            </h1>
+          </div>
+          <div className="footerContentColumn">
+            <div className="contentLogo">
+              <img
+                src="https://www.ikea.com/global/en/images/ikea-logo.svg"
+                className="contentImg"
+                alt=""
+              />
             </div>
-            <div className="footer__social">
-                <div className="footer__links">
-                    <div className="footer__socialIcons">
-                        <FacebookRoundedIcon fontSize="large" className='social'/>
-                    </div>
-
-                    <div className="footer__socialIcons">
-                        <InstagramIcon fontSize="large" className='social'/>
-                    </div>
-
-                    <div className="footer__socialIcons">
-                         <TwitterIcon fontSize="large" className='social'/>
-                    </div>
-                   
-                    <div className="footer__socialIcons">
-                         <YouTubeIcon fontSize="large" className='social'/>
-                    </div>
-                </div>
-
-                <div className="footer__buttons">
-                    <button>
-                        
-                        <p className="button__name"> Change country</p>
-                    </button>
-                    
-                </div>
-                
-
+          </div>
+          <div className="footerContentColumn">
+            <div className="footerLinks">
+              <div class="footerLink">About us |</div>
+              <div class="footerLink">Life at home |</div>
+              <div class="footerLink">Sustainability |</div>
+              <div class="footerLink">Ethics & Integrity |</div>
+              <div class="footerLink">Work with us |</div>
+              <div class="footerLink">Newsroom |</div>
             </div>
-            <hr className="footer__line"/>
-            <div className="footer__bottom">
-                <p>&copy; Inter IKEA Systems B.V. 2000-2022</p>
-                <div className="footer__bottomTags">
-                    <a>Privacy policy</a>
-                    <a>Cookie policy</a>
-                    <a>Cookie settings</a>
-                    <a>Terms and conditions</a>
-                   
-                </div>
-            </div>
+          </div>
         </div>
-    )
+      </div>
+      <div className="footerRoom">
+        <div className="footer-room">
+          <div className="footerRoomImgDiv">
+            <img
+              src="https://www.ikea.com/global/en/images/footer-daylight.svg"
+              width="1950"
+              height="320"
+              class="footer-room__image svelte-l7jfkp"
+              alt=""
+            ></img>
+            <img
+              src="https://www.ikea.com/global/en/images/footer-nighttime.svg"
+              width="1950"
+              height="320"
+              class="footerRoomImg2"
+              alt=""
+            ></img>
+          </div>
+        </div>
+      </div>
+      <div class="footerEnd">
+        <div class="footerEndItem">© Inter IKEA Systems B.V. 1999 - 2021</div>{" "}
+        <div class="footerEndItem">
+          <button class="footerEndButton">
+            Cookie information
+          </button>{" "}
+          <span
+            class="footerEndlastLink"
+          >
+            Privacy Statement
+          </span>
+        </div>
+      </div>
+    </footer>
+  )
 }
-
-
-
-
