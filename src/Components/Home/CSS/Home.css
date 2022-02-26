@@ -1,0 +1,330 @@
+.wrapperHome {
+  background-color: #f0ede8;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 104rem;
+  margin: 4rem auto 0 auto;
+}
+
+.section1 {
+  z-index: 12;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: minmax(44rem, 80vh);
+  grid-template-areas: "main sub";
+  padding: 0 1rem 0 2rem;
+  box-sizing: border-box;
+}
+
+.box1 {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.startScreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  background: #111;
+}
+
+.banner1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box2 {
+  grid-area: sub;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-right: 1rem;
+}
+
+.holder {
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: #ffdb00;
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.logoHolder1 {
+  z-index: 1;
+  width: 40rem;
+  transition: opacity 500ms;
+}
+
+.regionPicker {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.shopLink {
+  min-height: 6.25rem;
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #111111;
+  text-decoration: none;
+  z-index: 3;
+  padding: 0 3.125rem;
+  font-size: 2.25rem;
+  line-height: 120%;
+  font-weight: 700;
+  margin: 1rem 0;
+  letter-spacing: -0.06rem;
+  margin: 0;
+}
+
+.GoShop {
+  transition: margin 500ms ease-in-out;
+  margin-right: 0.625rem;
+}
+
+.shopLink:hover .GoShop {
+  margin-right: 1.5rem;
+}
+
+.right {
+  transform: rotate(180deg);
+}
+
+.regionMenu {
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-top: 0.0625rem solid rgba(17, 17, 17, 0.3);
+  padding: 0 1.25rem;
+}
+
+.menuContent {
+  background: #fff094;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  margin: 1.25rem 0;
+  position: relative;
+}
+
+.add {
+  /* animation: 1s normal slideIn; */
+  transition: all 0.5s ease-in-out;
+  transform: translateY(100%);
+}
+.add1 {
+  /* animation: 1s normal slideIn; */
+  transition: all 0.5s ease-in-out;
+  transform: translateY(8rem);
+}
+
+.rev {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0%);
+}
+
+.rev1 {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0rem);
+}
+
+.findOnlineStore {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 0.0625rem;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 0.0625rem;
+}
+
+.searchInput {
+  font-size: 16px;
+  padding: 16px 0 16px 54px;
+  height: 48px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin: 0;
+  background: #ffffff;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 2rem;
+  top: 1.375rem;
+}
+
+.searchsvg {
+  font-size: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  flex-shrink: 0;
+}
+
+.selectorList {
+  max-height: calc(3rem * 3);
+  box-sizing: border-box;
+  background: transparent;
+  overflow: auto;
+  margin-top: 0.2rem;
+}
+
+.selectorList::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.5rem;
+}
+
+.selectorList::-webkit-scrollbar-thumb {
+  background-color: #888153;
+  height: 0.2rem;
+  border-radius: 1rem;
+}
+
+.option {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  text-align: left;
+  height: 3rem;
+  background: #fff094;
+  border-radius: 0.5rem;
+  padding: 0 1.25rem;
+}
+.option:hover {
+  background: #fff8ca;
+}
+
+.openPicker {
+  box-sizing: border-box;
+  color: #111111;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  z-index: 11;
+  padding: 16px 0 16px 0px;
+  background: transparent;
+  border-top: 1px solid rgba(17, 17, 17, 0.3);
+  min-height: 100px;
+  transition: background 300ms;
+  background: #ffdb00;
+}
+
+.openPicker:hover {
+  background: #fff094;
+}
+
+.section2 {
+  margin-top: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-rows: minmax(27.5rem, 40vh);
+  padding: 0 1rem 0 2rem;
+  box-sizing: border-box;
+}
+
+.card {
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #ffffff;
+  margin-right: 1rem;
+}
+
+.imgContainer {
+  flex: 1;
+  position: relative;
+  max-height: calc(100% - 6.25rem);
+}
+
+.cardImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  position: relative;
+  text-decoration: none;
+  color: #111111;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 6.25rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1;
+  width: 85%;
+}
+
+.iconSpan {
+  position: absolute;
+  right: 1.5rem;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 767px) {
+}
+
+@media screen and (min-width: 992px) {
+  .section1 {
+    grid-template-columns: repeat(1fr);
+  }
+}
