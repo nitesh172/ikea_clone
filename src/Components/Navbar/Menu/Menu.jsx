@@ -260,25 +260,20 @@ export const Menu = () => {
                         <div onClick={()=>{
                           
                           navigation(`/gamepage/Gaming furniture`)
-                          setPBox(false)
+                          setPBox(!pBox)
                           dispatch(hideFunction())
-
                         }}>Gaming furniture</div>
                         <div onClick={()=>{
                           navigation("/gamepage/Furniture set")
-                          setPBox(false)
                           dispatch(hideFunction())
                         }}> Furniture set</div>
                         <div onClick={()=>{
-                          setPBox(false)
-                          dispatch(hideFunction())
                           navigation("/gamepage/Beds")
-
+                          dispatch(hideFunction())
                         }}>Beds</div>
                         <div onClick={()=>{
-                          setPBox(false)
-                          dispatch(hideFunction())
                           navigation("/gamepage/Sofas & armchairs")
+                          dispatch(hideFunction())
                         }}>Sofas & armchairs</div>
                         <div> Bookcases & shelving units</div>
                         <div> Tables & desks</div>

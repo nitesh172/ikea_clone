@@ -13,7 +13,7 @@
 
 
 .stepNoDiv{
-    width: 55%;
+    width: 60%;
     margin: 3.5% 0 0 0%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -51,7 +51,239 @@
     
 }
 
+.sBc{
+    background-color:rgb(152,153,152) ;
+}
+
+#headShip{
+    font-size: 2.2vw;
+    margin: .5% 0 0 0 ;
+    font-weight: 700;
+}
+
+
+#firstDetailsDiv{
+    margin: 3% 0 0 48%;
+    font-size: .85vw;
+    
+}
+
+#b{
+    font-weight: 700;
+}
+
+#DfeeDiv{
+    font-size: .85vw;
+    display: flex;
+    margin-top: 1%;
+    box-sizing: border-box;
+    padding-bottom: 2%;
+    border-bottom: 1px solid black;
+}
+
+#DfeeDiv>div:nth-child(2){
+    margin-left:62% ;
+    font-size: .9vw;
+    font-weight: 700;
+}
+
+#tAmount{
+    font-size: 1.2vw;
+    display: flex;
+    margin-top: 1%;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+#tAmount>div:nth-child(2){
+    margin-left:46.5% ;
+    font-size: 1.2vw;
+    font-weight: 700;
+    width: 30%;
+    text-align: right;
+}
+
+#taxDiv{
+    margin: 1% 0 0 71% ;
+    font-size: .8vw;
+    
+}
+
+#placeOrderBtn{
+    background-color: rgb(2,117,202);
+    margin: 5% 0 0 80%;
+    width: 20%;
+    height: 45px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 700;
+    padding: 2.2% 0 0 4%;
+}
+
+#shippingCart{
+    width: 100%;
+    margin-top: 3%;
+    border-bottom: 1px solid rgb(212,212,212);
+}
+
+#itemDiv{
+    height: 150px;
+    border-top: 1px solid rgb(212,212,212);
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    color: rgb(51,51,51);
+}
+
+#itemDiv>div{
+    /* border: .1px  solid black; */
+}
+
+#imageDiv{
+    width: 60%;
+    height: 90%;
+    margin: 5% 0 0 10%;
+}
+
+#nameBox{
+    font-size: .9vw;
+    font-weight: 700;
+    margin-top: 3%;
+}
+
+#descDiv{
+    font-size: .9vw;
+    font-weight: 400;
+    margin-top: 0%;
+}
+
+#fPriceDiv{
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-top: 1%;
+}
+
+#articalNo{
+    font-size: .8vw;
+    margin-top: 1%;
+    font-weight: 600;
+}
+
+#totalDiv{
+    display: flex;
+    font-size: .7;
+    font-weight: 600;
+    margin-top: 15%;
+}
+#totalDiv>div:nth-child(1){
+    box-sizing: border-box;
+    padding-top: 1%;
+    margin-left: 30%;
+}
+
+#totalDiv>div:nth-child(2){
+    width: 60%;
+    text-align: right;
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+#orderSummBox{
+    margin: 6% 0 0 49%;
+     color: rgb(51,51,51);
+     
+}
+
+#oST{
+font-weight: 700;
+    font-size: 1.4vw;
+
+}
+
+#orderVal{
+    font-size: .85vw;
+    font-weight: 700;
+    margin-top: 3%;
+    display: flex;
+    gap: 70%;
+}
+
+#orderVal>div:nth-child(2){
+    font-size: .9vw;
+}
+
+#delFee{
+    font-size: .85vw;
+    font-weight: 500;
+    margin-top: 1%;
+    display: flex;
+    gap: 62%;
+    border-bottom: 1px dashed rgb(212,212,212);
+    box-sizing: border-box;
+    padding-bottom: 2%;
+}
+
+
+
+#tAmount1{
+    font-size: 1.2vw;
+    display: flex;
+    margin-top: 1.8%;
+    font-weight: 700;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    
+    padding-top: 1.5%;
+}
+
+#tAmount1>div:nth-child(2){
+    margin-left:47% ;
+    font-size: 1.2vw;
+    font-weight: 700;
+    width: 30%;
+    text-align: right;
+}
+
+
+#taxDiv1{
+    margin: 1% 0 0 70% ;
+    font-size: .8vw;
+    
+}
+
+#placeOrderBtn1{
+    background-color: rgb(2,117,202);
+    margin: 5% 0 0 80%;
+    width: 20%;
+    height: 45px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 700;
+    font-size: .8vw;
+    text-align: center;
+    padding: 2.5% 0 0 0;
+}
+
+#allCards{
+    display: grid;
+    grid-template-columns: repeat(8,12.5%);
+    
+    margin-top: 5%;
+}
+
+#allCards>div img{
+    width: 70%;
+    /* height: 50%; */
+    margin: 0 0 0 10%;
+}
+
+ 
+
+#empty{
+    height: 20px;
+}
 
 div{
-    /* border: .1px solid black; */
+    /* border: .1px  solid black; */
 }

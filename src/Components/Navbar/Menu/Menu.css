@@ -12,7 +12,6 @@
     /* align-items: center; */
     top: 9.2%;
     left: 3%;
-   
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -133,8 +132,6 @@
      animation: abc .2s linear;
      /* display: none; */
     /* make display cut */
-
-   
 }
 
 @keyframes abc{
@@ -270,7 +267,7 @@
 }
 
 .showBox{
-    display: block ;
+    display: block;
 }
 
 .hideBox{
