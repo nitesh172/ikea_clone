@@ -3,8 +3,36 @@ import { Navbar } from "../../Navbar/Navbar"
 
 import '../CSS/Cart.css'
 
+import { useEffect, useState } from "react"
+
+const cartFromLocalStore= JSON.parse(localStorage.getItem('IkeaCart') || '[]')
+
+
 
 export const Cart = () => {
+
+  const [cart , setCart] = useState(cartFromLocalStore)
+    const [total , setTotal] = useState(0)
+   
+  
+    useEffect(() =>{
+        localStorage.setItem('IkeaCart' , JSON.stringify(cart))
+
+  }, [cart])
+
+
+  const removeFromCart = (productToRemove) =>{
+    ///////////
+    setCart(
+        cart.filter((product) => product !== productToRemove )
+    );
+
+    }
+ 
+
+
+
+
   return (
     <div>
    
@@ -23,8 +51,40 @@ export const Cart = () => {
             </div>
           </div>
 
+
+
+
+
+
+         <div className='cart_productdiv'>
+
+         <div className="Cart_div">
+         {cart.map((product)=>(
+              
+             <div className="cart_product">
+             
+              <h2>{product.name}</h2>
+              <h2>{product.cost}</h2>
+             {/*  <h1>Total:{total}</h1>  */} 
+              <img className='cart_p_icon' src={product.image}  />
+              <button onClick={() => removeFromCart(product)}>Remove From cart</button>
+             </div>
+         ))  }
          
-          
+         
+         
+         
+         </div>
+         
+         
+         </div>
+  
+         
+
+
+
+
+
 
           <div className="total-cart-price">
             <p>Subtotal</p>

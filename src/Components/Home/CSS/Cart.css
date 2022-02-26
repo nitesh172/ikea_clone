@@ -8,6 +8,27 @@
 }
 
 
+
+
+.cart_productdiv{
+  width: 700px;
+  height: 230px;
+  border: 1px solid red;
+}
+
+
+.cart_p_icon{
+  width:150px;
+}
+
+
+
+
+
+
+
+
+
 #container-cart {
     /* border: 1px solid red; */
     position: relative;

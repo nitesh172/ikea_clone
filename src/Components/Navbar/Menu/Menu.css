@@ -133,6 +133,8 @@
      animation: abc .2s linear;
      /* display: none; */
     /* make display cut */
+
+   
 }
 
 @keyframes abc{
@@ -268,7 +270,7 @@
 }
 
 .showBox{
-    display: block;
+    display: block ;
 }
 
 .hideBox{

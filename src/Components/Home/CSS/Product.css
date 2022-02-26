@@ -6,6 +6,12 @@
     margin-top: 2%;
 }
 
+
+.product{
+    width: 92%;
+    height: 400px;
+  /*  border:1px solid red; */
+}
 .title_txt{
     font-weight: 700;
     text-transform: uppercase;

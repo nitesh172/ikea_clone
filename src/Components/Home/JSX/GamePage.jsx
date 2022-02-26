@@ -1,14 +1,16 @@
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "../CSS/Gamepage.css"
 import {Product} from './Product'
 import {Footer} from './Footer'
 import { Navbar } from "../../Navbar/Navbar"
-
+import axios from 'axios'
+import { useParams } from "react-router-dom"
 
 
 export const GamePage = () => {
-
+   
+  const {PageName} = useParams()
    
     const [show , setShow]= useState(true)
     const [catshow , setcatShow]= useState(true)
@@ -17,12 +19,107 @@ export const GamePage = () => {
     const [matshow , setmatShow]= useState(true)
     const [filtershow , setfilterShow] = useState(true)
 
+    const [gameproducts , setGameproducts] = useState({})
+
+    const myurl = `https://ikeaserver.herokuapp.com/pages/${PageName}`;
+
+      
+    useEffect(() =>{
+       axios.get(myurl)
+         .then(res =>{
+          console.log("MasterData" , res)
+         // console.log(res.data)
+          setGameproducts(res.data)
+         // console.log("gamedata", gameproducts)
+         })
+
+    } ,[])
+
+
+
+
+
+    const [product , setProduct] = useState([])
+   
+  
+    const myurl1 = `https://ikeaserver.herokuapp.com/products/mainCategory=${PageName}`;
+
+      
+    useEffect(() =>{
+       axios.get(myurl1)
+         .then(res =>{
+          //console.log("allPdata" , res)
+         // console.log(res.data)
+         setProduct(res.data)
+         // console.log("gamedata", gameproducts)
+         })
+
+    } ,[])
+
+   
+
+
+    /*
+    useEffect( () =>{
+        axios.get(url)
+        .then((res)=>{
+         console.log("alldata" , res)
+         console.log("Onluy" , res.data)
+         setGameproducts(res.data) 
+         console.log( "Gamedata" ,gameproducts)  // subCategory  { gameproducts.subCategory[0].subCategoryURL } 
+        // console.log( "3Images" ,gameproducts.subCategory[0].subCategoryURL) 
+       }   )
+    } , [url])
+   */
 
     return (
       <div className="game_main">
+      
       <div>
      <Navbar />
+      </div>
 
+
+      <div className="upper_box">
+      {
+        gameproducts.mainCategory &&  <h1 className="game_head">{gameproducts.mainCategory}</h1> 
+      } 
+        
+       
+
+         <div className="head_img_box">
+         {
+          gameproducts.subCategory &&  gameproducts.subCategory.map((e , index) =>{
+             return   <img key={index} className='head_icon' src={ e.subCategoryURL } ></img> 
+           }
+          )}    
+
+           
+         
+         
+         </div>
+
+       <div className="head_sub_left_div">
+       {
+        gameproducts.mainHeading &&  <h2 className="h2_head">
+        <strong>
+        {gameproducts.mainHeading}
+        </strong>
+       </h2> 
+      } 
+    
+
+    {
+        gameproducts.mainDesc &&  
+        <p className="head_p">
+        {gameproducts.mainDesc}
+        </p>
+      } 
+        
+
+        
+        </div>
+       
       
       </div>
 
@@ -231,108 +328,58 @@ export const GamePage = () => {
 
    { /* Product Div starts here ---    --------------------------------------------------------------------*/  } 
 
-
+  
        <div className="game_products_div">
-        <div className="product">
-         <Product 
-         id="1"
-         title="LÅNESPELARE"
-         desc="Mug Holder"
-         price={799}
-         imageX="https://www.ikea.com/in/en/images/products/lanespelare-mug-holder-black__0985191_pe816542_s5.jpg?f=xxs"
-         image="https://www.ikea.com/in/en/images/products/lanespelare-mug-holder-black__0997518_pe822696_s5.jpg?f=xxxs"
-         rating={4}
-         />
+        {
+          product.map((item )=>{
+            return <Product key={item._id} 
+            title={item.companyName}
+            desc={item.name}
+            price={item.price}
+            imageX={item.img1}
+            image={item.img2}
+            rating={item.rating}/>
+          })
+        }
         
-        </div>
-
-        <div className="product">
-        <Product 
-        id="2"
-        title="LÅNESPELARE"
-        desc="Mug Holder"
-        price={799}
-        imageX="https://www.ikea.com/in/en/images/products/utespelare-gaming-desk-black__0985179_pe816538_s5.jpg?f=xxs"
-        image="https://www.ikea.com/in/en/images/products/utespelare-gaming-desk-black__0997777_pe822755_s5.jpg?f=xxxs"
-        rating={4}
-        />
-        </div>
-
-        <div className="product">
-        <Product 
-        id="2"
-        title="LÅNESPELARE"
-        desc="Mug Holder"
-        price={799}
-        imageX="https://www.ikea.com/in/en/images/products/uppspel-pegboard-combination-black__0985178_pe816537_s5.jpg?f=xxs"
-        image="https://www.ikea.com/in/en/images/products/uppspel-pegboard-black__0997548_pe822699_s5.jpg?f=xxxs"
-        rating={5}
-        />
-        </div>
-
-        <div className="product">
-        <Product 
-        id="2"
-        title="LÅNESPELARE"
-        desc="Mug Holder"
-        price={799}
-        imageX="https://www.ikea.com/in/en/images/products/gruppspel-gaming-chair-gunnared-beige__1036734_pe838521_s5.jpg?f=xxs"
-        image="https://www.ikea.com/in/en/images/products/gruppspel-gaming-chair-gunnared-beige__1046699_ph180881_s5.jpg?f=xxs"
-        rating={4}
-        />
-        </div>
-
-       
-
-        <div className="product">
-        <Product 
-        id="2"
-        title="LÅNESPELARE"
-        desc="Mug Holder"
-        price={799}
-        imageX="https://www.ikea.com/in/en/images/products/lanespelare-multi-functional-cushion-blanket__0984811_pe816419_s5.jpg?f=xxs"
-        image="https://www.ikea.com/in/en/images/products/lanespelare-accessories-stand__1083065_pe858960_s5.jpg?f=xxxs"
-        rating={3}
-        />
-        </div>
-
-        <div className="product">
-        <Product 
-        id="2"
-        title="LÅNESPELARE"
-        desc="Mug Holder"
-        price={799}
-        image="https://www.ikea.com/in/en/images/products/huvudspelare-gaming-chair-black__0961666_pe807698_s5.jpg?f=xxs"
-        imageX="https://www.ikea.com/in/en/images/products/utespelare-gaming-chair-bomstad-black__0997900_pe822868_s5.jpg?f=xxxs"
-        rating={4}
-        />
-        </div>
-
-        <div className="product">
-        <Product 
-        id="2"
-        title="LÅNESPELARE"
-        desc="Mug Holder"
-        price={799}
-        image="https://www.ikea.com/in/en/images/products/huvudspelare-gaming-chair-black__0961666_pe807698_s5.jpg?f=xxs"
-        imageX="https://www.ikea.com/in/en/images/products/lanespelare-multi-functional-cushion-blanket__0997849_pe822825_s5.jpg?f=xxxs"
-        rating={3}
-        />
-        </div>
-
-        <div className="product">
-        <Product 
-        id="2"
-        title="LÅNESPELARE"
-        desc="Mug Holder"
-        price={799}
-        image="https://www.ikea.com/in/en/images/products/huvudspelare-gaming-chair-black__0961666_pe807698_s5.jpg?f=xxs"
-        imageX="https://www.ikea.com/in/en/images/products/gruppspel-gaming-chair-gunnared-beige__1046699_ph180881_s5.jpg?f=xxs"
-        rating={4}
-        />
-        </div>
-       
+    
        </div>
+
+
+      
+      
+
+
+    <div className="lower_box">
+      <div className="lowerhead_sub_left_div">
+     
+      {
+       gameproducts.pageData && gameproducts.pageData.map((item )=>{
+          return  <div> 
+          <h3 className="h3_head">
+          <strong>
+          {item.pHeading}
+           </strong>
+         </h3>
+         <p className="head_p">
+         {item.pDesc}
+       </p>
+        </div>
+        })
+      }
+
+      
+
+
+     
+      
+      </div>
+     
+        
+       
+      
+      </div>
+
      
         { /* Footer starts here ------------------------------------------------------------------------------- */  } 
     

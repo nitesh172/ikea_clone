@@ -11,12 +11,13 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<GamePage />}></Route>
-        { /*   <Route path="/" element={<Home />}></Route>*/}
+        <Route path="/" element={<Home />}></Route>
+        { /*   <Route path="/cart" element={<Cart />}></Route>*/}
           { /*   <Route path="/" element={<GamePage />}></Route>*/}
-      
+         { /*  <Route path="/gamepage" element={<GamePage />}></Route>  */} 
+          <Route path="/cart" element={<Cart />}></Route>
         <Route path='/shop' element={<Shop></Shop>}> </Route>
-        {/* <Route path='/GamePage/:PageName' element={<GamePage />}></Route> */}
+         <Route path='/gamepage/:PageName' element={<GamePage />}></Route> 
         <Route path='/shipping' element={<ShippingPage></ShippingPage>}></Route>
       </Routes>
     </div>

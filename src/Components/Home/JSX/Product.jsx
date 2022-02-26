@@ -1,12 +1,20 @@
 import "../CSS/Product.css"
-import { useState } from "react"
+import { useState , useEffect } from "react"
+import axios from 'axios'
 
 
 export const Product = ({id, title , image , imageX , desc , price , rating}) => {
   
     const [over, setOver] = useState(false);
+  
+
+
+      
+    
 
   return (
+    <div className="product">
+
     <div className="gameproduct" 
     onMouseOver={() => setOver(true)}
     onMouseOut={() => setOver(false)}
@@ -17,10 +25,11 @@ export const Product = ({id, title , image , imageX , desc , price , rating}) =>
      <h3 className="price_txt"><span className="rs">Rs</span> {price} </h3>
      <div className="rating_txt">{
          Array(rating).fill()
-         .map((_)=>(
-             <p>★</p>
+         .map((_ , index)=>(
+             <p  key={index}>★</p>
          ))
      }</div>
+    </div>
     </div>
   )
 }
