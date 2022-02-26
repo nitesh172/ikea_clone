@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.iconContainer {
+.nav .iconContainer {
   position: absolute;
   top: 0;
   left: 2rem;
@@ -21,7 +21,7 @@
   height: 4rem;
 }
 
-.menuButton {
+.iconContainer .menuButton {
   color: #111111;
   box-sizing: border-box;
   padding: 0.6em;
@@ -42,10 +42,10 @@
   align-items: center;
 }
 
-.line {
+.lineMainConatiner .line {
   display: block;
   width: 2.0625rem;
-  height: 0.25rem;
+  height: 0.18rem;
   margin-bottom: 0.375rem;
   position: relative;
   background: #111111;
@@ -55,17 +55,26 @@
 }
 
 .openMenu {
-    clip: rect(0 0 0 0);
-    clip-path: inset(100%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 span .openMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoHolder {
+  position: absolute;
+  height: 1.875rem;
+  width: 10rem;
+  left: 5.75rem;
+  top: 0.875rem;
+  z-index: 12;
 }

@@ -1,1 +1,2 @@
-export const TRY = "TRY"
+export const TRUE_BUTTON = "TRUE_BUTTON"
+export const FALSE_BUTTON = "FALSE_BUTTON"
