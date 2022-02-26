@@ -1,0 +1,351 @@
+*{
+    margin:0;
+}
+
+.game_main{
+    margin:auto;
+}
+
+.filter_box{
+    /*margin-top: 1%; */
+    width:88%;
+    height:110px;
+    border-bottom:1px solid rgba(104, 102, 102, 0.123); 
+    background-color:#ffffff ;
+    margin-left: 8.8%;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 0;
+    
+}
+
+
+.upper_box{
+  margin-left: 8.4%;
+  width:90%;
+  height: 590px;
+  /*border: 1px solid red;*/ 
+}
+
+.lower_box{
+  margin-left: 8.4%;
+  width:90%;
+ /* border: 1px solid rgb(236, 49, 49); */ 
+
+}
+
+
+.game_head{
+    margin-left: 1%;
+    overflow-wrap: break-word;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    line-height: 1.3334;
+    letter-spacing: -0.42px;
+    color: #111111;
+    font-size: 1.8rem;
+    line-height: 1.45;
+    letter-spacing: -0.0042em;
+    font-weight: 700;
+}
+
+
+
+.head_sub_left_div{
+  width:58%;
+  height: 200px;
+  /*border: 1px solid blueviolet; */ 
+  margin-top: 3%;
+  margin-left: 1%;
+}
+
+
+.lowerhead_sub_left_div{
+  width:58%;
+ 
+ /* border: 1px solid rgb(8, 195, 241); */
+  margin-top: 3%;
+  margin-left: 1%;
+
+}
+
+
+
+.head_img_box{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.head_icon{
+  margin-left: 1%;
+  width:32%;
+}
+
+.h2_head{
+  
+  color: #111;
+  font-size: 1.500rem;
+  line-height: 1.444;
+  font-family:"Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
+  font-weight: 700;
+}
+
+.h3_head{
+    font-size: 1.500rem;
+    color: #111;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.head_p{
+    display: block;
+    font-size: 0.96rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family:"Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    word-break: break-word;
+    color:#4a4b4d;
+}
+
+
+
+
+
+
+
+
+.select_button{
+    margin-top: 4.5%;
+    margin-right: 2%;
+    position: relative;
+    font-size: .875rem;
+    background: none;
+    border: 0;
+    padding: 0;
+    
+    font-weight: bold;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 64px;
+    cursor: pointer;
+    outline: 0;
+    vertical-align: top;
+    border-radius: 64px;
+    transition-property: opacity,transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    justify-content: center;
+    align-items: center;
+    height: 2.6rem;
+    padding: 0 1rem;
+    color: #111;
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    font-family:"Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
+    z-index: 1;
+  
+}
+
+
+
+.select_button_black{
+    margin-top: 4.5%;
+    margin-right: 2%;
+    position: relative;
+    font-size: .875rem;
+    background: none;
+    border: 0;
+    padding: 0;
+    
+    font-weight: bold;
+    text-align: center;
+    display: inline-flex;
+    border-radius: 64px;
+    cursor: pointer;
+    outline: 0;
+    vertical-align: top;
+    border-radius: 64px;
+    transition-property: opacity,transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    justify-content: center;
+    align-items: center;
+    height: 2.6rem;
+    padding: 0 1rem;
+    background-color: #111;
+    color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    font-family:"Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
+    z-index: 1;
+  
+}
+
+
+
+.select_button:hover{
+    background: #dddbdb;
+}
+
+
+.game_products_div{
+    /* border: 1px solid black; */
+     width:91%;
+     margin-left:8%;
+     font-family:"Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
+     box-shadow: 0 2px 3px 0 #0000001a;
+     display:grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      gap:1px;
+    
+     
+   }
+
+
+   .product{
+       width: 92%;
+       height: 400px;
+     /*  border:1px solid red; */
+   }
+
+
+   .product_image{
+       width:90%;
+       margin-left: 4%;
+       margin-right: 4%;
+   }
+  
+   input[type="radio"] {
+    transform: scale(1.6);
+    color: #555;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(1.6);
+    color: #555;
+  }
+ 
+ 
+
+   #shortDropdown {
+    margin-top: 4.5%;
+    margin-right: 2%;
+    position: absolute;
+    top: 55px;
+    display: grid;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius: 15px;
+    height: 500px;
+   
+   
+    overflow: scroll;
+   
+  }
+  #shortDropdown > div {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: space-around;
+    padding: 15px;
+  }
+  #shortDropdown label {
+    font-size: 15px;
+    color: #484848;
+  }
+
+
+
+
+
+  .arrowdown{
+      margin-left: 10px;
+      width:16px;
+  }
+
+  .rotate{
+      transform: rotate(180deg);
+      margin-left: 10px;
+      width:16px;
+      filter: invert(1);
+
+  }
+
+
+  #catdrop {
+    margin-top: 4.5%;
+    margin-right: 2%;
+    position: absolute;
+    left: 95px;
+    top: 55px;
+    display: grid;
+    width: 300px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius: 15px;
+    overflow-y: scroll;
+    
+    z-index: 1;
+  }
+  #catdrop > div,
+  #seatsdrop > div,
+  #pricedrop > div,
+  #matdrop > div {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: space-around;
+    padding: 15px;
+  }
+  #catdrop label,
+  #seatsdrop label,
+  #pricedrop label,
+  #matdrop label {
+    font-size: 14px;
+    color: #484848;
+  }
+
+  #pricedrop {
+    margin-top: 4.5%;
+    margin-right: 2%;
+    position: absolute;
+    left: 270px;
+    top: 55px;
+    display: grid;
+    
+    width: 300px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius: 15px;
+    
+    overflow-y: scroll;
+    
+    
+    z-index: 1;
+  }
+  
+
+  /* material drop */
+#matdrop {
+    margin-top: 4.5%;
+    margin-right: 2%;
+    position: absolute;
+    left: 495px;
+    top: 55px;
+    display: grid;
+    width: 300px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius: 15px;
+    overflow-y: scroll;
+    
+    z-index: 1;
+  }
