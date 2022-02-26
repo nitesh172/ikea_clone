@@ -13,7 +13,7 @@ export const ShippingPage = () => {
 
         <div className='stepNoDiv'>
 
-                {/* <div className='insStep'>
+                 <div className='insStep'>
                     <div id='iconDiv'>
                         <img src={img} alt="" />
                         <div id='numb' > 1</div>
@@ -44,7 +44,7 @@ export const ShippingPage = () => {
                     <div id='nameText'>
                         Shopping cart (Step 1 of 3)
                     </div>
-                </div> */}
+                </div> 
             
 
         </div>
