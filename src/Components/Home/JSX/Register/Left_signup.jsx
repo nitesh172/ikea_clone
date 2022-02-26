@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Left_signup = () => {
   return (
@@ -10,7 +11,7 @@ export const Left_signup = () => {
           <p className='large-font'>Create an <span className='blue-text'>IKEA family</span> profile</p>
         </div>
         <div className="ltext">
-          <p className='small-font'>Already have an account?<a href="#">Login</a></p>
+          <p className='small-font'>Already have an account?<Link to="/login">Login</Link></p>
         </div>
         <br />
         <br />

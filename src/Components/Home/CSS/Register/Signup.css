@@ -113,6 +113,7 @@
     position: relative;
     max-width: 100%;
     padding: 2rem 1rem;
+    z-index: 1;
 }
 
 .form-input {
@@ -163,7 +164,7 @@
     transition: all 0.2s ease-in-out;
 } 
 
-/* .form-input:valid + .animated-label, */
+.Active,
 .form-input:focus + .animated-label {
     font-size: 14px;
     transform: translate(1rem, 1rem);
@@ -197,6 +198,7 @@
     transition: all 0.2s ease-in-out;
 }
 
+.Active,
 .dropdowns:focus + .select-label {
     transform: translate(1rem, 0.4rem)
 }

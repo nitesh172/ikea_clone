@@ -1,0 +1,27 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "Category": "Gaming accessories",
+            "color": "black",
+            "companyName": "LÅNESPELARE",
+            "desc": "You can easily clamp this mug holder to your desk and have something refreshing to drink within reach while playing – at a safe distance from both the keyboard and mouse.",
+            "img1": "https://i.postimg.cc/Kzt0h5dm/lanespelare-mug-holder-black-0985191-pe816542-s5.jpg",
+            "img2": "https://i.postimg.cc/L6WLv1bD/lanespelare-mug-holder-black-0997518-pe822696-s5.jpg",
+            "img3": "https://i.postimg.cc/7hfbTBwk/lanespelare-mug-holder-black-0997517-pe822697-s5.jpg",
+            "img4": "https://i.postimg.cc/NFqf5QJ1/lanespelare-mug-holder-black-0985192-pe816541-s5.jpg",
+            "mainCategory": "Furniture",
+            "mainSubCategory": "Gaming furniture",
+            "name": "Mug holder",
+            "price": 799,
+            "rating": 4.5,
+            "subCategory": " LÅNESPELARE Mug holder"
+        }
+    ],
+    "cart": [
+        {   "id": 1,
+            "items": [],
+            "user_id": 1 
+        }
+    ]
+}
