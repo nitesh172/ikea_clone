@@ -3,7 +3,7 @@ import "./Menu.css"
 import {BiMenu} from "react-icons/bi"
 import {IoCloseSharp, IoArrowBackOutline} from "react-icons/io5"
 
-import {useState, useRef} from 'react'
+import {useRef, useState} from 'react'
 import {BsGlobe2} from "react-icons/bs"
 import { useSelector, useDispatch } from "react-redux"
 import { hideFunction, showFunction } from "../../../Redux/Shop/actionShop"
