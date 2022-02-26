@@ -4,31 +4,48 @@ import { Navbar } from "../../Navbar/Navbar"
 import '../CSS/Cart.css'
 
 import { useEffect, useState } from "react"
+import { useDispatch, useSelector } from 'react-redux'
+import axios from 'axios'
+import { getUserCart } from '../../../Redux/Cart/actionCart'
 
-const cartFromLocalStore= JSON.parse(localStorage.getItem('IkeaCart') || '[]')
+//const cartFromLocalStore= JSON.parse(localStorage.getItem('IkeaCart') || '[]')
 
 
 
 export const Cart = () => {
 
-  const [cart , setCart] = useState(cartFromLocalStore)
+  const email = "niteshkumarbaghel172@gmail.com";
+  const userCart = useSelector((state)=> state.userCart)
+  const dispatch = useDispatch()
+   console.log(userCart)
+
+  //const [cart , setCart] = useState(cartFromLocalStore)
     const [total , setTotal] = useState(0)
+
+
+  
    
   
     useEffect(() =>{
-        localStorage.setItem('IkeaCart' , JSON.stringify(cart))
+       // localStorage.setItem('IkeaCart' , JSON.stringify(cart))
+       axios.get(`https://ikeaserver.herokuapp.com/cart/email=${email}`)
+       .then(({data}) => 
+                   dispatch(getUserCart(data.value.cartItem))  )
+ 
+  }, [])
 
-  }, [cart])
-
-
+  //console.log(userCart)
+  /*
   const removeFromCart = (productToRemove) =>{
     ///////////
     setCart(
         cart.filter((product) => product !== productToRemove )
     );
 
-    }
- 
+    }   */
+
+
+   
 
 
 
@@ -44,8 +61,9 @@ export const Cart = () => {
       <div className="cart-main">
         <div className="cart-top">
           <div className="cart-title">
+
             <div className="shopping">
-              <h1>Shopping cart</h1>
+              <h1 className='H_bold'>Shopping cart</h1>
               <div><img className='downicon'  src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="" /></div>
               <div className="printer"><img className='printericon' src="https://cdn-icons-png.flaticon.com/512/446/446991.png" alt="" /></div>
             </div>
@@ -53,23 +71,48 @@ export const Cart = () => {
 
 
 
-
-
-
-         <div className='cart_productdiv'>
+      
+        <div className='cart_productdiv'>
 
          <div className="Cart_div">
-         {cart.map((product)=>(
-              
-             <div className="cart_product">
+         {userCart.userCart.map((product )=>(
+
              
-              <h2>{product.name}</h2>
-              <h2>{product.cost}</h2>
-             {/*  <h1>Total:{total}</h1>  */} 
-              <img className='cart_p_icon' src={product.image}  />
-              <button onClick={() => removeFromCart(product)}>Remove From cart</button>
+              
+           <div key={product._id} className="cart_product">
+             <img className='cart_p_icon' src={product.img1}  />
+             <div className='cart_prod_text'> 
+               <div className='right_text'> 
+                <h2 className='bold_title'>{product.companyName}</h2>
+                  <h2 className='desc_title'>{product.name}</h2>
+                  <h2 className='desc_title'>{product.color}</h2>
+               </div> 
+            
+             
              </div>
-         ))  }
+
+             <div className='price_text'> 
+             <h1 className='rs'>Rs:{product.price}</h1> 
+            
+             <div className='util_div'> 
+               <button><img className='del_button' src='https://img.icons8.com/wired/344/filled-trash.png'></img></button>
+             
+                   <div className='del_count'>
+                    <p className='mar'>{product.count}</p> 
+                    <img className='down_arrow' src="https://cdn-icons-png.flaticon.com/512/32/32195.png" />
+                   </div>
+             </div>
+             
+             </div> 
+            
+              {/* 
+                 onClick={() => removeFromCart(product)}
+                <div></div>
+             <button onClick={() => removeFromCart(product)}><img className='del_button' src='https://img.icons8.com/wired/344/filled-trash.png'></img></button>  */} 
+
+             
+             </div>
+          ))  }
          
          
          
@@ -78,23 +121,21 @@ export const Cart = () => {
          
          
          </div>
-  
          
 
-
-
-
+       
 
 
           <div className="total-cart-price">
-            <p>Subtotal</p>
+            <p className='sub'>Subtotal</p>
             <p id="prc-cart">0</p>
           </div>
         </div>
 
+
         <div className="cart-bottom">
           <div className="retun-cart">
-            <img src="https://cdn-icons.flaticon.com/png/512/3258/premium/3258481.png?token=exp=1645708756~hmac=8d863d88784977edd8b5edc088161574" alt="" />
+            <img className='invert_icon' src="https://cdn-icons-png.flaticon.com/512/664/664468.png" alt="" />
             <div className="left-return">
               <p>
                 <span className="big-p">Make the most of delivery </span>(order from 0Kg to 3Kg : Rs.199)
@@ -109,6 +150,7 @@ export const Cart = () => {
               <p>Remaining weight: <span id="rmg-weight" className="big-p">300 kg</span></p>
             </div>
           </div>
+
           <div className="recieve">
             <p>How would you like to receive your order?</p>
             <div className="recieve-bottom">
