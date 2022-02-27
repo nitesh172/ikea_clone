@@ -9,6 +9,7 @@ import { AddressPage } from './Components/ShippingPage/AddressPage';
 import { Item } from './Components/Items_page/Item';
 import { Signup } from './Components/Home/JSX/Register/Signup';
 import { Login } from './Components/Login/Login';
+import { Cart } from './Components/FrontCart/Cart';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/product/:id' element={<Item></Item>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/cart' element={<Cart></Cart>}></Route>
       </Routes>
     </div>
   )

@@ -70,7 +70,9 @@ export const Navbar = () => {
                         </div>
                         <div>
                             <div id='shoppingBox'>
-                                <AiOutlineShoppingCart className='insIcons'></AiOutlineShoppingCart>
+                                <AiOutlineShoppingCart className='insIcons' onClick={()=>{
+                                    navigate("/cart")
+                                }}></AiOutlineShoppingCart>
 
                             </div>
                         </div>
