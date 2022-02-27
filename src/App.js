@@ -7,6 +7,8 @@ import { ShippingPage } from './Components/ShippingPage/ShippingPage';
 import { GamePage } from './Components/Home/JSX/GamePage';
 import { AddressPage } from './Components/ShippingPage/AddressPage';
 import { Item } from './Components/Items_page/Item';
+import { Signup } from './Components/Home/JSX/Register/Signup';
+import { Login } from './Components/Login/Login';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/shipping' element={<ShippingPage></ShippingPage>}></Route>
         <Route path='/filldetails' element={<AddressPage></AddressPage>}></Route>
         <Route path='/item' element={<Item></Item>}></Route>
+        <Route path='/signup' element={<Signup></Signup>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
     </div>
   )
