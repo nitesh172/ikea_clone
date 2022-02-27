@@ -1,6 +1,7 @@
 import "../CSS/Product.css"
 import { useState , useEffect } from "react"
 import axios from 'axios'
+import { useNavigate } from "react-router-dom";
 
 
 export const Product = ({id, title , image , imageX , desc , price , rating}) => {
@@ -8,16 +9,19 @@ export const Product = ({id, title , image , imageX , desc , price , rating}) =>
     const [over, setOver] = useState(false);
   
 
-
+  const navigate = useNavigate()
       
     
 
   return (
-    <div className="product">
+    <div className="product" onClick={()=>{
+                navigate(`/product/${id}`)
+            }}>
 
     <div className="gameproduct" 
     onMouseOver={() => setOver(true)}
     onMouseOut={() => setOver(false)}
+    
     >
      <img className="img_icon"   src={over ? image : imageX}  ></img>
      <h3 className="title_txt">{title} </h3>

@@ -2,12 +2,15 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom';
 import { addItemCart, getUserCart } from '../../Redux/Cart/actionCart';
 import { getItem } from '../../Redux/Item/actionItem';
 
 
 export const Right_item = () => {
     const email = "niteshkumarbaghel172456@gmail.com";
+
+    const {id} = useParams()
 
     const {item} = useSelector((store) => store.item);
 
@@ -32,7 +35,7 @@ export const Right_item = () => {
 
     // }, []);
     useEffect(() => {
-        axios.get("https://ikeaserver.herokuapp.com/products/621b005cf1defe58e55e7d54").then(({ data }) => {
+        axios.get(`https://ikeaserver.herokuapp.com/products/${id}`).then(({ data }) => {
             dispatch(getItem(data));
         });
 

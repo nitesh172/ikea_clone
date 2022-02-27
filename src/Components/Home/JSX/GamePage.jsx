@@ -5,7 +5,7 @@ import {Product} from './Product'
 import {Footer} from './Footer'
 import { Navbar } from "../../Navbar/Navbar"
 import axios from 'axios'
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 
 
 export const GamePage = () => {
@@ -18,6 +18,8 @@ export const GamePage = () => {
     const [sizeshow , setsizeShow]= useState(true)
     const [matshow , setmatShow]= useState(true)
     const [filtershow , setfilterShow] = useState(true)
+
+    const navigate = useNavigate()
 
     const [gameproducts , setGameproducts] = useState({})
 
@@ -331,16 +333,17 @@ export const GamePage = () => {
    { /* Product Div starts here ---    --------------------------------------------------------------------*/  } 
 
   
-       <div className="game_products_div">
+       <div className="game_products_div" >
         {
           product.map((item )=>{
             return <Product key={item._id} 
+            id={item._id}
             title={item.companyName}
             desc={item.name}
             price={item.price}
             imageX={item.img1}
             image={item.img2}
-            rating={item.rating}/>
+            rating={item.rating}  />
           })
         }
         

@@ -19,7 +19,7 @@ function App() {
         <Route path='/gamepage/:PageName' element={<GamePage></GamePage>}></Route>
         <Route path='/shipping' element={<ShippingPage></ShippingPage>}></Route>
         <Route path='/filldetails' element={<AddressPage></AddressPage>}></Route>
-        <Route path='/item' element={<Item></Item>}></Route>
+        <Route path='/product/:id' element={<Item></Item>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
