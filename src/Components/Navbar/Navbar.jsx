@@ -14,6 +14,7 @@ export const Navbar = () => {
 
     const focusUser = useRef(null)
     const [activeCls, setActiveCls] = useState(false)
+    const searchFocus = useRef(null)
 
     const navigate = useNavigate()
   return (
@@ -22,7 +23,7 @@ export const Navbar = () => {
         <div id='navBox'>
 
             <div>
-                <Menu ></Menu>
+                <Menu></Menu>
             </div>
             
             <div id='inBox'>
@@ -34,8 +35,8 @@ export const Navbar = () => {
                 <div>
                     <div id='grayBox' >
                         <div id='insideGray'>
-                            <div>
-                                <IoSearchSharp className='searchIcon'></IoSearchSharp>
+                            <div ref={searchFocus}>
+                                <IoSearchSharp  className='searchIcon'  ></IoSearchSharp>
 
                             </div>
                             <div>

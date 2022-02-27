@@ -42,22 +42,24 @@ export const GamePage = () => {
     const [product , setProduct] = useState([])
    
   
-    const myurl1 = `https://ikeaserver.herokuapp.com/products/mainCategory=${PageName}`;
+    // const myurl1 = `https://ikeaserver.herokuapp.com/products/mainCategory=${PageName}`;
+      const myurl1 = `https://ikeaserver.herokuapp.com/products`
 
+      
       
     useEffect(() =>{
        axios.get(myurl1)
          .then(res =>{
           //console.log("allPdata" , res)
          // console.log(res.data)
-         setProduct(res.data)
-         // console.log("gamedata", gameproducts)
+         setProduct(res.data.value)
+        //  console.log("gamedata", gameproducts)
          })
 
     } ,[])
 
    
-
+    // console.log(product);
 
     /*
     useEffect( () =>{

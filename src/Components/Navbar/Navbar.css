@@ -52,6 +52,13 @@
 .searchIcon{
     font-size: 1.3vw;
     margin: 3.8% 0 0 16%;
+    /* z-index: -1; */
+    /* position: relative; */
+    display: none;
+}
+
+.searchNon{
+    display: none;
 }
 
 #inpBox{
