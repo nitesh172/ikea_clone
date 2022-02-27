@@ -2,10 +2,11 @@
 import { useEffect, useState } from "react"
 import "../CSS/Gamepage.css"
 import {Product} from './Product'
-import {Footer} from './Footer'
+import {Footer, MainFooter} from '../../Footer/MainFooter'
 import { Navbar } from "../../Navbar/Navbar"
 import axios from 'axios'
 import { useNavigate, useParams } from "react-router-dom"
+import {MdTune} from "react-icons/md"
 
 
 export const GamePage = () => {
@@ -319,7 +320,8 @@ export const GamePage = () => {
          <div onClick={()=>setfilterShow(!filtershow)} className={filtershow? "select_button":"select_button_black"}>
          <p>All Filters</p> 
 
-         <img className={filtershow? "arrowdown":"rotate"}  src="https://cdn-icons.flaticon.com/png/512/3171/premium/3171047.png?token=exp=1645682887~hmac=9b88da106cd97a662b668d7d70bfea87"></img>
+         <MdTune className={filtershow? "arrowdown":"rotate"} ></MdTune>
+         {/* <img className={filtershow? "arrowdown":"rotate"}  src="https://cdn-icons.flaticon.com/png/512/3171/premium/3171047.png?token=exp=1645682887~hmac=9b88da106cd97a662b668d7d70bfea87"></img> */}
          </div>
 
 
@@ -388,7 +390,7 @@ export const GamePage = () => {
      
         { /* Footer starts here ------------------------------------------------------------------------------- */  } 
     
-       <Footer />
+       <MainFooter />
 
 
 

@@ -2,12 +2,18 @@ import {useState,useEffect} from 'react';
 import axios from "axios"
 import "./AddressPage.css"
 
+import useRazorpay from "react-razorpay";
+
+
 import { useSelector, useDispatch } from 'react-redux';
 import { getUserCart } from '../../Redux/Cart/actionCart';
 
 import img from "./arrow_active.gif"
 
 export const AddressPage = () => {
+
+    const Razorpay = useRazorpay();
+
 
     // let cartArr = [
     //     {
@@ -154,7 +160,46 @@ export const AddressPage = () => {
                     <div className='lable'>Phone*:</div>
                     <input type="number" className='inpAddressPage' />
 
-                    <div id='proceedPay'>
+                    <div id='proceedPay' onClick={()=>{
+                        async function rz() {
+
+                            console.log("sid");
+
+  const data = {
+    amount: (sum + 599)*100 ,
+  }
+  let url = "https://ikeaserver.herokuapp.com/razorpay"
+  let response = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+  let d = await response.json()
+  console.log(d)
+  var options = {
+    key: "rzp_test_kqeHDKDTMlfKMR", // Enter the Key ID generated from the Dashboard
+    name: "IKEA",
+    description: d.id,// id option
+    image:
+      "https://xp.io/storage/1GTsrVkl.png",
+    order_id: d.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    callback_url: "https://ikeaserver.herokuapp.com/razorpay/success",
+    notes: {
+      address: "Razorpay Corporate Office",
+    },
+    theme: {
+      color: "#0060B2",
+    },
+
+  }
+  var rzp1 = new Razorpay(options)
+  rzp1.open()
+//   e.preventDefault()
+}
+ rz() 
+                    }}>
                         Proceed to pay
                     </div>
 

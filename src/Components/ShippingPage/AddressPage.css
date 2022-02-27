@@ -220,6 +220,7 @@
     background-color: rgb(2,117,202);
     margin: 2% 0 0 12%;
     font-weight: 700;
+    cursor: pointer;
 }
 
 div{
