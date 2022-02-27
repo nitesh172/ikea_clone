@@ -1,5 +1,10 @@
 import { MainFooter } from "../Footer/MainFooter"
 import { Navbar } from "../Navbar/Navbar"
+import {FiTruck} from "react-icons/fi"
+import {RiStore3Line} from "react-icons/ri"
+import {RiTruckLine} from "react-icons/ri"
+import {GiSelfLove} from "react-icons/gi"
+import {GiDrill} from "react-icons/gi"
 
 import './Cart.css'
 
@@ -7,6 +12,7 @@ import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { getUserCart } from "../../Redux/mainCart/actionCart"
+import { useNavigate } from "react-router-dom"
 
 //const cartFromLocalStore= JSON.parse(localStorage.getItem('IkeaCart') || '[]')
 
@@ -22,7 +28,7 @@ export const Cart = () => {
   //const [cart , setCart] = useState(cartFromLocalStore)
     const [total , setTotal] = useState(0)
 
-
+    const navigate = useNavigate()
   
    
   
@@ -155,11 +161,13 @@ export const Cart = () => {
             <p>How would you like to receive your order?</p>
             <div className="recieve-bottom">
               <div className="one-r">
-                <img src="https://cdn-icons.flaticon.com/png/512/2800/premium/2800333.png?token=exp=1645708649~hmac=7fe4ce2438bfe97058a3a487171c8444" alt="" />
+                {/* <img src="https://cdn-icons.flaticon.com/png/512/2800/premium/2800333.png?token=exp=1645708649~hmac=7fe4ce2438bfe97058a3a487171c8444" alt="" /> */}
+                <FiTruck className="cartTruck"></FiTruck>
                 <p>Home delivery</p>
               </div>
               <div id="gocheck" className="two-r">
-                <img src="https://cdn-icons.flaticon.com/png/512/3258/premium/3258481.png?token=exp=1645708756~hmac=8d863d88784977edd8b5edc088161574" alt="" />
+                {/* <img src="https://cdn-icons.flaticon.com/png/512/3258/premium/3258481.png?token=exp=1645708756~hmac=8d863d88784977edd8b5edc088161574" alt="" /> */}
+                <RiStore3Line className="cartTruck"></RiStore3Line>
                 <p>Click & collect</p>
               </div>
             </div>
@@ -167,13 +175,16 @@ export const Cart = () => {
         </div>
       </div>
 
-      {/* <div id="goToShippingBtn">
-
-      </div> */}
+      <div id="goToShippingBtn" onClick={()=>{
+          navigate("/shipping")
+      }}>
+             Proceed
+      </div>
 
       <div className="cart-main-bottom">
         <div className="servise">
-          <img src="https://cdn-icons.flaticon.com/png/512/819/premium/819873.png?token=exp=1645708348~hmac=c2c01fa23048cb93874a287fcbb603cc" alt="" />
+          <RiTruckLine className="bigTruck"></RiTruckLine>
+          {/* <img src="https://cdn-icons.flaticon.com/png/512/819/premium/819873.png?token=exp=1645708348~hmac=c2c01fa23048cb93874a287fcbb603cc" alt="" /> */}
           <div className="service-des">
             <p>Our Delivery Service</p>
             <p>
@@ -184,7 +195,8 @@ export const Cart = () => {
         </div>
 
         <div className="servise">
-          <img src="https://cdn-icons.flaticon.com/png/512/3164/premium/3164624.png?token=exp=1645708447~hmac=88798abe10f74bcd65657a7ae6c76c09" alt="" />
+          <GiSelfLove className="bigTruck"></GiSelfLove>
+          {/* <img src="https://cdn-icons.flaticon.com/png/512/3164/premium/3164624.png?token=exp=1645708447~hmac=88798abe10f74bcd65657a7ae6c76c09" alt="" /> */}
           <div className="service-des">
             <p>Our Return Policy</p>
             <p>
@@ -195,7 +207,8 @@ export const Cart = () => {
         </div>
 
         <div className="servise">
-          <img src="https://cdn-icons.flaticon.com/png/512/780/premium/780634.png?token=exp=1645708574~hmac=4722d04ff55a821df83100d3f2ff8b5e" alt="" />
+          <GiDrill className="bigTruck"></GiDrill>
+          {/* <img src="https://cdn-icons.flaticon.com/png/512/780/premium/780634.png?token=exp=1645708574~hmac=4722d04ff55a821df83100d3f2ff8b5e" alt="" /> */}
           <div className="service-des">
             <p>Our Assembly Service</p>
             <p>
