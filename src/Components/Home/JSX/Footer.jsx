@@ -53,14 +53,8 @@ export const Footer = () => {
       <div class="footerEnd">
         <div class="footerEndItem">© Inter IKEA Systems B.V. 1999 - 2021</div>{" "}
         <div class="footerEndItem">
-          <button class="footerEndButton">
-            Cookie information
-          </button>{" "}
-          <span
-            class="footerEndlastLink"
-          >
-            Privacy Statement
-          </span>
+          <button class="footerEndButton">Cookie information</button>{" "}
+          <span class="footerEndlastLink">Privacy Statement</span>
         </div>
       </div>
     </footer>

@@ -1,136 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Noto IKEA", "Noto Sans", Roboto, "Open Sans", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto IKEA", "Noto Sans", Roboto, "Open Sans", system-ui,
+    sans-serif;
 }
 
 .container {
-    display: flex;
-    margin: 20vh 0;
+  display: flex;
+  margin: 20vh 0;
 }
-
 
 /* ******************************LEFT CONTAINER STARTS********************************** */
 
 .left-div {
-    width: 30%;
-    /* border: 3px solid #9f5943; */
-    min-height: 100vh;
-    margin-left: 8%;
+  width: 30%;
+  /* border: 3px solid #9f5943; */
+  min-height: 100vh;
+  margin-left: 8%;
 }
 
 .left-div-inner {
-    width: 90%;
-    /* border: 2px solid coral; */
-    margin:auto;
+  width: 90%;
+  /* border: 2px solid coral; */
+  margin: auto;
 }
 
 .large-font {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 110%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 110%;
 }
 
-
-
 .blue-text {
-    color: #0058ab;
-} 
+  color: #0058ab;
+}
 
 /* Image Container */
 .img-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .left-img-container {
-    width: 49%;
-    display: flex;
-    flex-direction: column;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
 }
 .right-img-container {
-    width: 49%;
+  width: 49%;
 }
 
 /* Left Images */
 .left-img-div img {
-    width: 99%;
-    height: 200px;
-    object-fit: cover;
-    object-position: 5% 0; 
+  width: 99%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 5% 0;
 }
 
 /* Right Images */
 .right-img-div img {
-    width: 99%;
-    height: 170px;
-    object-fit: cover;
+  width: 99%;
+  height: 170px;
+  object-fit: cover;
 }
 
-.big-img img{
-    height: 200px;
+.big-img img {
+  height: 200px;
 }
-
-
-
-
 
 /* ******************************LEFT CONTAINER ENDS********************************** */
 
-
 /* ******************************MIDDLE CONTAINER ENDS********************************** */
 
-.middle-div{
-    width: 10%;
+.middle-div {
+  width: 10%;
 }
 
 /* ******************************MIDDLE CONTAINER ENDS********************************** */
-
-
-
 
 /* ******************************RIGHT CONTAINER STARTS********************************** */
 
-
 .right-div {
-    width: 50%;
-    /* border: 3px solid #555; */
-    min-height: 100vh;
-    padding: 0 2rem 0 1rem;
+  width: 50%;
+  /* border: 3px solid #555; */
+  min-height: 100vh;
+  padding: 0 2rem 0 1rem;
 }
 
 .family .bold {
-    font-weight: bold;
-    width: 60%;
+  font-weight: bold;
+  width: 60%;
 }
 
 .radio-div,
 .check-div {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .form-group {
-    position: relative;
-    max-width: 100%;
-    padding: 2rem 1rem;
-    z-index: 1;
+  position: relative;
+  max-width: 100%;
+  padding: 2rem 1rem;
+  z-index: 1;
 }
 
 .form-input {
-    border: none;
-    border-bottom: 1px solid #555;
-    display: block;
-    font-size: 18px;
-    padding: 5px 0;
-    
+  border: none;
+  border-bottom: 1px solid #555;
+  display: block;
+  font-size: 18px;
+  padding: 5px 0;
 }
 
 .full {
-    width: 95%;
+  width: 95%;
 }
 
 .half {
-    width: 60%;
+  width: 60%;
 }
 
 .form-input::-webkit-outer-spin-button,
@@ -139,171 +127,167 @@
 }
 
 .form-input:focus {
-    border-bottom: 2px solid;
-    color: blue;
-    outline: none;
+  border-bottom: 2px solid;
+  color: blue;
+  outline: none;
 }
 
 .form-input::placeholder {
-    opacity: 0;
+  opacity: 0;
 }
 
 .form-input:focus::placeholder {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .animated-label {
-    font-weight: 400;
-    position: absolute;
-    color: #555;
-    font-size: 18px;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    transform: translate(1rem, 2.5rem);
-    transition: all 0.2s ease-in-out;
-} 
+  font-weight: 400;
+  position: absolute;
+  color: #555;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(1rem, 2.5rem);
+  transition: all 0.2s ease-in-out;
+}
 
 .Active,
 .form-input:focus + .animated-label {
-    font-size: 14px;
-    transform: translate(1rem, 1rem);
+  font-size: 14px;
+  transform: translate(1rem, 1rem);
 }
 
 .dropdowns {
-    border-bottom: 1px solid black;
-    outline: none;
-    width: 60%;
+  border-bottom: 1px solid black;
+  outline: none;
+  width: 60%;
 }
 
 .dropdowns:focus {
-    border-bottom: 2px solid;
-    color: blue;
-    outline: none;
+  border-bottom: 2px solid;
+  color: blue;
+  outline: none;
 }
 
 .dropdowns option {
-    color: black;
+  color: black;
 }
 
 .select-label {
-    font-weight: 400;
-    position: absolute;
-    color: #555;
-    font-size: 18px;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    transform: translate(1rem, 1.9rem);
-    transition: all 0.2s ease-in-out;
+  font-weight: 400;
+  position: absolute;
+  color: #555;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(1rem, 1.9rem);
+  transition: all 0.2s ease-in-out;
 }
 
 .Active,
 .dropdowns:focus + .select-label {
-    transform: translate(1rem, 0.4rem)
+  transform: translate(1rem, 0.4rem);
 }
 
 .font-small {
-    font-size: 0.8em;
-    width: 60%;
-    color: #555;
-    padding-top: 0.5em;
+  font-size: 0.8em;
+  width: 60%;
+  color: #555;
+  padding-top: 0.5em;
 }
-
 
 /* ***********RadioBtn on top*************** */
 
 /* Style the label containing the input element */
 .radio-label-container {
-    display: block;
-    position: relative;
-    padding-left: 2.5rem;
-    padding-right: 1rem;
-    margin-bottom: 12px;
-    color: #333;
-    font-size: 15px;
-    cursor: pointer;
-    user-select: none;
+  display: block;
+  position: relative;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+  user-select: none;
 }
-  
-  /* Hide the browser's default radiobtn */
+
+/* Hide the browser's default radiobtn */
 .radio-label-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 .radio-label-container:hover,
 .radio-label-container input:checked .radio-label-container {
-      color: #111;
- }
-  
+  color: #111;
+}
+
 .large-circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #EAF0F6;
-    border: 1px solid #555;
-    border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eaf0f6;
+  border: 1px solid #555;
+  border-radius: 50%;
 }
-  /* A custom radiobtn */
+/* A custom radiobtn */
 .small-circle {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 16px;
-    width: 16px;
-    background-color: #EAF0F6;
-    border: 1px solid #EAF0F6;
-    border-radius: 50%;
-}
-  
-  /* When the radio is checked, add a navy background */
-.radio-label-container input:checked ~  .large-circle {
-    background-color: #000;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 16px;
+  width: 16px;
+  background-color: #eaf0f6;
+  border: 1px solid #eaf0f6;
+  border-radius: 50%;
 }
 
-.radio-label-container input:checked ~  .small-circle {
-    background-color: #000;
-    display: block;
+/* When the radio is checked, add a navy background */
+.radio-label-container input:checked ~ .large-circle {
+  background-color: #000;
 }
-  
-  /* Show the radio when checked */
+
+.radio-label-container input:checked ~ .small-circle {
+  background-color: #000;
+  display: block;
+}
+
+/* Show the radio when checked */
 .radio-label-container input:checked ~ .small-circle:after {
-    display: block;
+  display: block;
 }
 
-
-  /* *********checkbox at bottom*********** */
+/* *********checkbox at bottom*********** */
 
 .checkbox {
-    transform: scale(1.6);   
-    color: #555;  
+  transform: scale(1.6);
+  color: #555;
 }
 
 .shifted {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .checkbox-label {
-    padding-left: 1.6rem;
+  padding-left: 1.6rem;
 }
 
 /* ********Submit btn********** */
 
 .submit-btn {
-    color: white;
-    background-color: black;
-    width: 70%;
-    padding: 1rem;
-    border-radius: 30px;
-    margin-left: 10%;
+  color: white;
+  background-color: black;
+  width: 70%;
+  padding: 1rem;
+  border-radius: 30px;
+  margin-left: 10%;
 }
- 
 
 /* ******************************RIGHT CONTAINER ENDS********************************** */
-  

@@ -10,7 +10,6 @@ export const Left_item = () => {
   const handleRead = () => {
     setRead(!read);
   }
-  // console.log("right", item);
   return (
     <div className='item-left-container'>
 

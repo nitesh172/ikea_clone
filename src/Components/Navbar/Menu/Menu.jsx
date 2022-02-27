@@ -66,8 +66,6 @@ export const Menu = () => {
         
           <div id="text">
                   <div id="firstC" onClick={()=>{
-                    // console.log(focusSecond.current);
-                    // console.log(focusProduct.current);
 
                     focusSecond.current.classList.add("hideBox")
                     focusProduct.current.classList.add("showBox")

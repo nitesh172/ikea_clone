@@ -13,7 +13,7 @@ export const Navbar = () => {
       setvs(false)
     }
   })
-  
+
   return (
     <nav className="nav">
       <div className="iconContainer">

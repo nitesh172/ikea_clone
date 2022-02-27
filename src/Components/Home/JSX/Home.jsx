@@ -333,7 +333,7 @@ export const Home = () => {
           </Link>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
