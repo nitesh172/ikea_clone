@@ -63,8 +63,8 @@
     background-color: white;
     animation:  .2s linear slideIn ;
     overflow: scroll;
-    z-index: 1;
-    position: relative;
+    /* z-index: 2; */
+    /* position: relative; */
 }
 
 .show::-webkit-scrollbar {

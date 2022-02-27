@@ -4,6 +4,7 @@ import {IoArrowForwardSharp} from "react-icons/io5"
 import {AiFillStar} from "react-icons/ai"
 import { Navbar } from '../Navbar/Navbar'
 import { TopCat } from './top Cat/TopCat'
+import {MainFooter} from "../Footer/MainFooter"
 
 export const Shop = () => {
 
@@ -508,9 +509,10 @@ export const Shop = () => {
         </div>
 
 
-        <div id="empty">
+        <MainFooter></MainFooter>
+        {/* <div id="empty">
 
-        </div>
+        </div> */}
     </div>
   )
 }
