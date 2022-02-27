@@ -1,43 +1,56 @@
-import React from 'react'
+import {useState,useEffect} from 'react';
+import axios from "axios"
 import "./ShippingPage.css"
 import img from "./arrow_active.gif"
 import { useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux';
+import { getUserCart } from '../../Redux/Cart/actionCart';
 
 export const ShippingPage = () => {
 
     let navigate = useNavigate()
 
-    let cartArr = [
-        {
-            image:"https://www.ikea.com/in/en/images/products/nyhamn-3-seat-sofa-bed-with-foam-mattress-knisa-grey-beige__0767330_pe754069_s3.jpg",
-            name:"NYHAMN",
-            desc:"3-seat sofa-bed",
-            price:"21,990"
-        },
-        {
-            image:"https://www.ikea.com/in/en/images/products/lerberg-shelf-unit-dark-grey__69211_pe183961_s3.jpg",
-            name:"LERBERG",
-            desc:"shelf unit",
-            price:"1,990"
-        }
-    ]
+    // let cartArr = [
+    //     {
+    //         image:"https://www.ikea.com/in/en/images/products/nyhamn-3-seat-sofa-bed-with-foam-mattress-knisa-grey-beige__0767330_pe754069_s3.jpg",
+    //         name:"NYHAMN",
+    //         desc:"3-seat sofa-bed",
+    //         price:"21,990"
+    //     },
+    //     {
+    //         image:"https://www.ikea.com/in/en/images/products/lerberg-shelf-unit-dark-grey__69211_pe183961_s3.jpg",
+    //         name:"LERBERG",
+    //         desc:"shelf unit",
+    //         price:"1,990"
+    //     }
+    // ]
+
+    const email = "innocentkp004@gmail.com";
+  const {userCart} = useSelector((state)=> state.userCart)
+  const dispatch = useDispatch()
+   console.log(userCart)
+
+  //const [cart , setCart] = useState(cartFromLocalStore)
+    const [total , setTotal] = useState(0)
+
+  
+   
+  
+    useEffect(() =>{
+       // localStorage.setItem('IkeaCart' , JSON.stringify(cart))
+       axios.get(`https://ikeaserver.herokuapp.com/cart/email=${email}`)
+       .then(({data}) => 
+                   dispatch(getUserCart(data.cartItem))  )
+        // console.log(data.cartItem)
+        
+        
+  }, [])
 
     let sum = 0;
 
-    cartArr.forEach((el) =>{
-        let num1 = el.price.split("");
-        let n1 = ""
-
-        for(let i = 0; i < num1.length; i++ ){
-            if(num1[i] !== ","){
-
-                n1 += num1[i];
-            }
-            if(num1[i] == "."){
-                break
-            }
-        }
-        sum += (+n1) ;
+    userCart.forEach((el) =>{
+       
+        sum += el.price* el.count;
     })
 
     // console.log(sum);
@@ -93,7 +106,7 @@ export const ShippingPage = () => {
 
         <div id='firstDetailsDiv'>
                 
-                <div ><b id='b'>{cartArr.length} </b>Products in shopping cart</div>
+                <div ><b id='b'>{userCart.length} </b>Products in shopping cart</div>
 
                 <div id='DfeeDiv'>
                     <div>Delivery fee/Picking fee</div>
@@ -102,7 +115,7 @@ export const ShippingPage = () => {
 
                 <div id='tAmount'>
                     <div>Total amount:</div>
-                    <div>Rs.  {sum}.00</div>
+                    <div>Rs.  {sum + 599}.00</div>
                 </div>
 
                 <div id='taxDiv'>All prices are inclusive of taxes</div>
@@ -120,11 +133,11 @@ export const ShippingPage = () => {
         <div id='shippingCart'>
 
             {
-                cartArr.map((el)=>{
+                userCart.map((el)=>{
                     return <div id='itemDiv'>
                         <div >
                             <div id='imageDiv'>
-                                <img src={el.image} alt="" className='img' />
+                                <img src={el.img1} alt="" className='img' />
                             </div>
                         </div>
 
@@ -132,7 +145,7 @@ export const ShippingPage = () => {
                             <div id='descBox'>
 
                                 <div id='nameBox'>{el.name}</div>
-                                <div id='descDiv'>{el.desc}</div>
+                                <div id='descDiv'>{el.desc.substring(0, 150)} ...</div>
                                 <div id='fPriceDiv'>Rs. {el.price}.00</div>
                                 <div id='articalNo'>Article No. {Math.floor(Math.random() * 1000)}</div>
                             </div>

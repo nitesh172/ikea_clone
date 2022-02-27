@@ -20,8 +20,8 @@ import { useNavigate } from "react-router-dom"
 
 export const Cart = () => {
 
-  const email = "niteshkumarbaghel172@gmail.com";
-  const userCart = useSelector((state)=> state.userCart)
+  const email = "innocentkp004@gmail.com";
+  const {userCart} = useSelector((state)=> state.userCart)
   const dispatch = useDispatch()
    console.log(userCart)
 
@@ -36,8 +36,10 @@ export const Cart = () => {
        // localStorage.setItem('IkeaCart' , JSON.stringify(cart))
        axios.get(`https://ikeaserver.herokuapp.com/cart/email=${email}`)
        .then(({data}) => 
-                   dispatch(getUserCart(data.value.cartItem))  )
- 
+                   dispatch(getUserCart(data.cartItem))  )
+        // console.log(data.cartItem)
+        
+        
   }, [])
 
   //console.log(userCart)
@@ -81,7 +83,10 @@ export const Cart = () => {
         <div className='cart_productdiv'>
 
          <div className="Cart_div">
-         {userCart.userCart.map((product )=>(
+        
+         
+         {
+          userCart.map((product )=>(
 
              
               
@@ -118,7 +123,9 @@ export const Cart = () => {
 
              
              </div>
-          ))  }
+          )) 
+           }
+          
          
          
          

@@ -1,53 +1,67 @@
-import React from 'react'
+import {useState,useEffect} from 'react';
+import axios from "axios"
 import "./AddressPage.css"
+
+import { useSelector, useDispatch } from 'react-redux';
+import { getUserCart } from '../../Redux/Cart/actionCart';
 
 import img from "./arrow_active.gif"
 
 export const AddressPage = () => {
 
-    let cartArr = [
-        {
-            image:"https://www.ikea.com/in/en/images/products/nyhamn-3-seat-sofa-bed-with-foam-mattress-knisa-grey-beige__0767330_pe754069_s3.jpg",
-            name:"NYHAMN",
-            desc:"3-seat sofa-bed",
-            price:"21,990"
-        },
-        {
-            image:"https://www.ikea.com/in/en/images/products/lerberg-shelf-unit-dark-grey__69211_pe183961_s3.jpg",
-            name:"LERBERG",
-            desc:"shelf unit",
-            price:"1,990"
-        },
-        {
-            image:"https://www.ikea.com/in/en/images/products/nyhamn-3-seat-sofa-bed-with-foam-mattress-knisa-grey-beige__0767330_pe754069_s3.jpg",
-            name:"NYHAMN",
-            desc:"3-seat sofa-bed",
-            price:"21,990"
-        },
-        {
-            image:"https://www.ikea.com/in/en/images/products/lerberg-shelf-unit-dark-grey__69211_pe183961_s3.jpg",
-            name:"LERBERG",
-            desc:"shelf unit",
-            price:"1,990"
-        }
-    ]
+    // let cartArr = [
+    //     {
+    //         image:"https://www.ikea.com/in/en/images/products/nyhamn-3-seat-sofa-bed-with-foam-mattress-knisa-grey-beige__0767330_pe754069_s3.jpg",
+    //         name:"NYHAMN",
+    //         desc:"3-seat sofa-bed",
+    //         price:"21,990"
+    //     },
+    //     {
+    //         image:"https://www.ikea.com/in/en/images/products/lerberg-shelf-unit-dark-grey__69211_pe183961_s3.jpg",
+    //         name:"LERBERG",
+    //         desc:"shelf unit",
+    //         price:"1,990"
+    //     },
+    //     {
+    //         image:"https://www.ikea.com/in/en/images/products/nyhamn-3-seat-sofa-bed-with-foam-mattress-knisa-grey-beige__0767330_pe754069_s3.jpg",
+    //         name:"NYHAMN",
+    //         desc:"3-seat sofa-bed",
+    //         price:"21,990"
+    //     },
+    //     {
+    //         image:"https://www.ikea.com/in/en/images/products/lerberg-shelf-unit-dark-grey__69211_pe183961_s3.jpg",
+    //         name:"LERBERG",
+    //         desc:"shelf unit",
+    //         price:"1,990"
+    //     }
+    // ]
+
+
+
+   
+    const email = "innocentkp004@gmail.com";
+  const {userCart} = useSelector((state)=> state.userCart)
+  const dispatch = useDispatch()
+   console.log(userCart)
+
+  
+   
+  
+    useEffect(() =>{
+       // localStorage.setItem('IkeaCart' , JSON.stringify(cart))
+       axios.get(`https://ikeaserver.herokuapp.com/cart/email=${email}`)
+       .then(({data}) => 
+                   dispatch(getUserCart(data.cartItem))  )
+        // console.log(data.cartItem)
+        
+        
+  }, [])
 
     let sum = 0;
 
-    cartArr.forEach((el) =>{
-        let num1 = el.price.split("");
-        let n1 = ""
-
-        for(let i = 0; i < num1.length; i++ ){
-            if(num1[i] !== ","){
-
-                n1 += num1[i];
-            }
-            if(num1[i] == "."){
-                break
-            }
-        }
-        sum += (+n1) ;
+    userCart.forEach((el) =>{
+       
+        sum += el.price* el.count;
     })
 
   return (
@@ -156,22 +170,22 @@ export const AddressPage = () => {
 
                         <div id='outBOS'>Order Summary</div>
 
-                        <div id='leng'>{cartArr.length} items</div>
+                        <div id='leng'>{userCart.length} items</div>
 
                         <div id='scrollItems'>
                             {
-                                cartArr.map((el)=>{
+                                userCart.map((el)=>{
                                     return <div id='addressItemsDiv' >
 
                                         <div>
                                             <div id='addressImageBox'>
-                                                <img src={el.image}  alt="" />
+                                                <img src={el.img1}  alt="" />
                                             </div>
                                         </div>
 
                                         <div>
                                             <div id='addName'>{el.name}</div>
-                                            <div id='addDesc'>{el.desc}</div>
+                                            <div id='addDesc'>{el.desc.substring(0, 20)}...</div>
                                             <div id='addArt'>Article No. {Math.floor(Math.random()*1000)} </div>
 
                                             <div id='addPriceDiv'>

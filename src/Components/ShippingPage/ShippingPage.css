@@ -119,6 +119,7 @@
     color: white;
     font-weight: 700;
     padding: 2.2% 0 0 4%;
+    cursor: pointer;
 }
 
 #shippingCart{
@@ -263,6 +264,7 @@ font-weight: 700;
     font-size: .8vw;
     text-align: center;
     padding: 2.5% 0 0 0;
+    cursor: pointer;
 }
 
 #allCards{
