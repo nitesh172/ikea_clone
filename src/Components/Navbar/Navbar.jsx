@@ -28,7 +28,9 @@ export const Navbar = () => {
             
             <div id='inBox'>
                 <div>
-                    <div id='imgBox'>
+                    <div id='imgBox' onClick={()=>{
+                        navigate("/shop")
+                    }}>
                         <img src="https://www.ikea.com/in/en/static/ikea-logo.f7d9229f806b59ec64cb.svg" className='img' alt="" />
                     </div>
                 </div>

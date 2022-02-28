@@ -17,6 +17,7 @@
     box-sizing: border-box;
     width: 73%;
     height: 73%;
+    cursor: pointer;
 }
 
 .img{
