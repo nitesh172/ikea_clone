@@ -1,0 +1,228 @@
+
+
+#outerCont{
+    width: 71%;
+    margin: auto auto auto 14%;
+    height: 715px;
+
+}
+
+.imgArr{
+    margin: 2% 0 0 0;
+}
+
+
+.stepNoDiv{
+    width: 60%;
+    margin: 3.5% 0 0 0%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 30px;
+    grid-gap: 5%;
+}
+
+.insStep{
+    display: flex;
+
+}
+
+
+#numb{
+    margin: -101% 0 0 28% ;
+    z-index: 1;
+    font-size: .8vw;
+    color: white;
+    font-weight: 600;
+}
+
+#nameText{
+    font-size: .79vw;
+    margin-left: 5%;
+    margin-top: .8%;
+}
+
+.setp1c{
+    color: rgb(255,103,1);
+    
+}
+
+.step2c{
+    color: rgb(152,153,152);
+    
+}
+
+.sBc{
+    background-color:rgb(152,153,152) ;
+}
+
+#addressOuterBox{
+    display: grid;
+    margin: 1% 0 0 0 ;
+    grid-template-columns: 60% 40%;
+    height: 700px;
+}
+
+#delInfo{
+    font-size: 1.1vw;
+    font-weight: 700;
+    width: 60%;
+    margin: 1% 0 0 2%;
+    box-sizing: border-box;
+    padding-bottom: 3%;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+
+#nameAddDiv{
+    font-size: .9vw;
+    font-weight: 700;
+ margin: 2% 0 0 2%;
+ color:  #ADADAD;
+}
+
+#allDetailsInpDiv{
+    margin: 2% 0 0 2%;
+}
+
+.lable{
+    font-size: .8vw;
+
+}
+
+.inpAddressPage{
+    box-sizing: border-box;
+    padding: 3px ;
+    outline: none;
+    font-size: .9vw;
+    border: 1px solid #ADADAD;
+    margin-top: .5%;
+    width: 45%;
+    margin-bottom: 2%;
+}
+
+.inpAddressPage:focus{
+    border: 1px solid blue;
+     box-shadow:  rgba(15, 15, 255, 0.579) 0px 0px 5px;;
+}
+
+#addressOS{
+    border:1px solid rgb(196,198,197);
+    margin: 11% 0 0 0;
+    height: 550px;
+}
+
+#outBox{
+    margin: 5%;
+}
+
+#outBOS{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+#leng{
+    font-size: .8vw;
+    margin-top: 3%;
+}
+
+#scrollItems{
+    height: 350px;
+
+    overflow: scroll;
+
+}
+
+#addressItemsDiv{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 110px;
+    border-bottom: 1px solid #ADADAD;;
+}
+
+#addressImageBox img{
+    width: 60%;
+    margin: 5% 0 0 20%;
+}
+
+#scrollItems::-webkit-scrollbar {
+  display: none;
+}
+
+#addName{
+    font-size: .85vw;
+    font-weight: 700;
+    margin: 6% 0 0 3%;
+}
+
+#addDesc{
+    font-size: .85vw;
+    margin: 1% 0 0 3%;
+}
+
+#addArt{
+    font-size: .85vw;
+    margin: 1% 0 0 3%;
+}
+
+#addPriceDiv{
+    font-size: .95vw;
+    display: flex;
+    font-weight: 700;
+
+    gap: 30% ;
+     margin: 4% 0 0 3%;
+}
+
+#secondOutBox{
+    box-sizing: border-box;
+    padding: 3% 5%;
+    border-top: 1px solid rgb(196,198,197);
+}
+
+#addOV{
+    display: flex;
+    font-size: .8vw;
+    font-weight: 700;
+    color: rgb(51,51,51);
+    gap: 62%;
+}
+
+#addFee{
+    display: flex;
+     font-size: .8vw;
+    color: rgb(51,51,51);
+    gap: 52%;
+    box-sizing: border-box;
+    border-bottom: 1px dashed rgb(196,198,197);
+    padding-bottom: 2%;
+}
+
+#addTA{
+    display: flex;
+    font-size: .9vw;
+    gap: 55%;
+    box-sizing: border-box;
+    padding-top: 2%;
+    margin-top: 2%;
+    font-weight: 700;
+    border-top: 2px solid black;
+}
+
+
+#proceedPay{
+    width: 18%;
+    height: 35px;
+    border-radius: 2px;
+    font-size: .8vw;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 1.5%;
+    background-color: rgb(2,117,202);
+    margin: 2% 0 0 12%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+div{
+    /* border  : .1px solid black; */
+}
